@@ -18,7 +18,7 @@ pip install -r requirements.txt
 python scripts/build.py
 
 # preview locally
-python -m http.server --directory site 8000
+python -m http.server --directory docs 8000
 ```
 
 See [PROJECT_SCOPE.md](PROJECT_SCOPE.md) for architecture, data model, and workflow.

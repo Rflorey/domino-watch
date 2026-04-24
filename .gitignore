@@ -10,4 +10,4 @@ __pycache__/
 /tmp/
 .vscode/
 .idea/
-# NOTE: do NOT gitignore site/ — it's the published output
+# NOTE: do NOT gitignore docs/ — it's the published output

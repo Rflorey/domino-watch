@@ -7,7 +7,7 @@
 **Stack decisions (locked):**
 - Build: **Python** (Jinja2), venv at `./venv`
 - Repo name: `domino-watch` (not tied to GitHub username)
-- Hosting: GitHub Pages, served from `main` branch `/site` folder
+- Hosting: GitHub Pages, served from `main` branch `/docs` folder (Pages requires `/(root)` or `/docs`)
 
 ---
 
@@ -83,7 +83,7 @@ domino-watch/
 ├── scripts/
 │   ├── build.py                  # Renders templates + data into site/
 │   └── new-brief.md              # Instructions for Claude to run a new brief
-└── site/                         # Build output — this is what GitHub Pages serves
+└── docs/                         # Build output — this is what GitHub Pages serves
     ├── index.html                # Today's brief
     ├── archive/
     │   ├── index.html            # Archive listing
@@ -92,7 +92,7 @@ domino-watch/
         └── styles.css
 ```
 
-**Design decision:** Keep the `site/` directory in the repo (not in `.gitignore`). GitHub Pages serves from `main` branch. This means every brief is a git commit and fully reproducible.
+**Design decision:** Keep the `docs/` directory in the repo (not in `.gitignore`). GitHub Pages serves from `main` branch `/docs` folder. This means every brief is a git commit and fully reproducible.
 
 ---
 
@@ -145,7 +145,7 @@ Pure Python script, no build framework.
 
 - `scripts/build.py` reads latest `data/briefs/*.json` + `data/grade-history.json`
 - Validates each brief against `data/brief.schema.json` before rendering
-- Renders Jinja2 templates from `templates/` to `site/`
+- Renders Jinja2 templates from `templates/` to `docs/`
 - Run via `python scripts/build.py` (with venv activated)
 
 **Dependencies (`requirements.txt`):**
@@ -205,7 +205,7 @@ The full current briefing spec (mandatory data pulls, grade scale, regime flag, 
 
 ### GitHub Pages setup (one-time)
 1. Create a public GitHub repo named `domino-watch`
-2. Settings → Pages → Source: `main` branch, **`/site` folder**
+2. Settings → Pages → Source: `main` branch, **`/docs` folder**
 3. Wait ~60 seconds for first build
 4. Verify URL: `https://<username>.github.io/domino-watch/`
 
@@ -258,7 +258,7 @@ Ordered. Each item should take < 30 minutes if scope holds.
 **Resolved:**
 - Stack: Python (Jinja2)
 - Repo name: `domino-watch`
-- Serve from: `/site` folder on `main`
+- Serve from: `/docs` folder on `main`
 
 **Still open (non-blocking for scaffold):**
 1. GitHub username (needed before publishing — repo can be created locally first)
@@ -306,7 +306,7 @@ __pycache__/
 .env.local
 *.log
 /tmp/
-# NOTE: do NOT gitignore site/ — it's the published output
+# NOTE: do NOT gitignore docs/ — it's the published output
 ```
 
 ## Appendix B — Suggested `README.md` (one-liner)
@@ -327,4 +327,4 @@ Jinja2>=3.1
 jsonschema>=4.0
 ```
 
-Local preview: `python -m http.server --directory site 8000`
+Local preview: `python -m http.server --directory docs 8000`

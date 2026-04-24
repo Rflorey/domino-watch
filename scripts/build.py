@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 BRIEFS_DIR = DATA_DIR / "briefs"
 TEMPLATES_DIR = ROOT / "templates"
-SITE_DIR = ROOT / "site"
+SITE_DIR = ROOT / "docs"
 ARCHIVE_DIR = SITE_DIR / "archive"
 ASSETS_DIR = SITE_DIR / "assets"
 
