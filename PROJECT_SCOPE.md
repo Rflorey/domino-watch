@@ -1,6 +1,6 @@
 # Domino Watch — Project Scope
 
-**Owner:** Russ Florey
+**Owner:** Operator
 **Purpose:** A daily macro brief tracking yen carry trade unwind risk (Jake Claver's "Domino Theory" framework), generated via Claude and published as a static website for personal use and sharing with a small audience.
 **Status:** Scaffolding
 
