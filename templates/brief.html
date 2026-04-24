@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domino Watch — {{ brief.date }}</title>
+<meta name="description" content="Daily macro brief tracking yen carry trade unwind risk — {{ brief.date }}.">
+<style>{{ styles }}</style>
+</head>
+<body>
+
+<header>
+  <h1>Domino Watch</h1>
+  <div class="meta">
+    Brief for <strong>{{ brief.date }}</strong>
+    &middot; generated {{ brief.generated_at }}
+    {% if not is_today %}&middot; <a href="./">latest brief</a>{% endif %}
+  </div>
+  {% if stale %}
+  <div class="banner-stale">
+    Heads up: this brief is {{ stale_days }} day(s) old. Markets move; treat as historical.
+  </div>
+  {% endif %}
+</header>
+
+<section>
+  <h2>Executive Summary</h2>
+  <p>
+    <span class="regime {{ brief.regime_flag }}">
+      {% if brief.regime_flag == 'green' %}🟢 CARRY-ON{% elif brief.regime_flag == 'yellow' %}🟡 CARRY-NEUTRAL{% else %}🔴 CARRY-OFF{% endif %}
+    </span>
+    {{ brief.regime_justification }}
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>Horizon</th><th>Grade</th><th>Label</th><th>Key driver</th></tr>
+    </thead>
+    <tbody>
+      {% for horizon in ['1w','2w','3w','4w'] %}
+      {% set g = brief.grades[horizon] %}
+      <tr>
+        <td>{{ {'1w':'1 week','2w':'2 weeks','3w':'3 weeks','4w':'4 weeks'}[horizon] }}</td>
+        <td><span class="grade grade-{{ g.grade }}">{{ g.grade }}</span></td>
+        <td>{{ g.label }}</td>
+        <td>{{ g.driver }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <div class="bottom-line"><strong>Bottom line.</strong> {{ brief.bottom_line }}</div>
+</section>
+
+<section>
+  <h2>The Stack</h2>
+  <table>
+    <thead>
+      <tr><th>Marker</th><th>Level</th><th>1d Δ</th><th>Note</th></tr>
+    </thead>
+    <tbody>
+      {% for row in brief.stack %}
+      <tr>
+        <td>{{ row.marker }}</td>
+        <td>{{ row.level if row.level is not none else '—' }}</td>
+        <td>{{ row.change_1d if row.change_1d is not none else '—' }}</td>
+        <td>{{ row.note }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="narrative">
+  <h2>The Narrative</h2>
+  <p>{{ brief.narrative.p1 }}</p>
+  <p>{{ brief.narrative.p2 }}</p>
+  <p>{{ brief.narrative.p3 }}</p>
+</section>
+
+<section>
+  <h2>Horizon Rationale</h2>
+  <ul>
+    <li><strong>Wk 1 → Wk 2:</strong> {{ brief.horizon_rationale.w1_w2 }}</li>
+    <li><strong>Wk 2 → Wk 3:</strong> {{ brief.horizon_rationale.w2_w3 }}</li>
+    <li><strong>Wk 3 → Wk 4:</strong> {{ brief.horizon_rationale.w3_w4 }}</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Watch List</h2>
+  <ul class="watch-list">
+    {% for item in brief.watch_list %}<li>{{ item }}</li>{% endfor %}
+  </ul>
+</section>
+
+{% if sparkline_svg %}
+<section>
+  <h2>1-Week Grade History</h2>
+  {{ sparkline_svg | safe }}
+  <p class="meta">A=5 (highest alert) … F=1 (all-clear). Dot color = regime flag.</p>
+</section>
+{% endif %}
+
+<section>
+  <h2>Sources</h2>
+  <ul class="sources">
+    {% for s in brief.sources %}
+    <li><a href="{{ s.url }}" rel="noopener noreferrer" target="_blank">{{ s.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<footer>
+  <nav>
+    <a href="./">Today</a>
+    <a href="archive/">Archive</a>
+  </nav>
+  <p class="disclaimer">
+    Domino Watch is a personal macro journal. Nothing here is financial,
+    investment, legal, or tax advice. Markets move fast and data may be
+    delayed or wrong. Do your own work.
+  </p>
+</footer>
+
+</body>
+</html>

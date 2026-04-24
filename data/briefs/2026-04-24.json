@@ -1,0 +1,43 @@
+{
+  "date": "2026-04-24",
+  "generated_at": "2026-04-24T06:15:00-07:00",
+  "regime_flag": "yellow",
+  "regime_justification": "Sample brief — placeholder data for build verification only.",
+  "grades": {
+    "1w": { "grade": "C", "label": "Watchful", "driver": "USD/JPY pinned near intervention zone" },
+    "2w": { "grade": "C", "label": "Watchful", "driver": "BOJ meeting risk inside window" },
+    "3w": { "grade": "D", "label": "Unlikely", "driver": "Spread cushion intact post-event" },
+    "4w": { "grade": "D", "label": "Unlikely", "driver": "Scenario-weighted: directional fade" }
+  },
+  "bottom_line": "Sample placeholder brief. Replace with the first real run.",
+  "stack": [
+    { "marker": "USD/JPY", "level": "157.20", "change_1d": "+0.15%", "note": "near MOF watch line" },
+    { "marker": "JGB 10Y", "level": "1.42%", "change_1d": "+2 bps", "note": "drifting up" },
+    { "marker": "US 10Y", "level": "4.35%", "change_1d": "-1 bp", "note": "range-bound" },
+    { "marker": "US-JP 10Y spread", "level": "293 bps", "change_1d": "-3 bps", "note": "compressing slowly" },
+    { "marker": "WTI", "level": "$78.10", "change_1d": "+0.4%", "note": "supply headlines" },
+    { "marker": "¥/bbl", "level": "12,278", "change_1d": "+0.6%", "note": "import cost pressure" },
+    { "marker": "Nikkei", "level": "39,450", "change_1d": "-0.3%", "note": "exporter wobble" },
+    { "marker": "BTC / XRP", "level": "$96,200 / $2.34", "change_1d": "-1.1% / -0.8%", "note": "modest risk-off" }
+  ],
+  "narrative": {
+    "p1": "Placeholder paragraph 1: this is a sample brief used to verify the build pipeline renders correctly. Replace with the first real run.",
+    "p2": "Placeholder paragraph 2: the quant anchors would be discussed here, justifying the 1-2 week grades with specifics.",
+    "p3": "Placeholder paragraph 3: crypto liquidity read goes here — yen-funded liquidity rotation and what BTC/XRP imply."
+  },
+  "horizon_rationale": {
+    "w1_w2": "BOJ meeting falls inside week 2 — keeps grade flat, not improving.",
+    "w2_w3": "Post-event, scenario weights re-anchor; absent surprise, drift back toward D.",
+    "w3_w4": "Directional lean: stable carry regime barring exogenous shock."
+  },
+  "watch_list": [
+    "USD/JPY break above 158 (intervention trigger)",
+    "JGB 10Y breach of 1.50%",
+    "Any Ueda / Katayama speech in next 5 days",
+    "US 10Y spike on CPI print"
+  ],
+  "sources": [
+    { "title": "Sample source A (placeholder)", "url": "https://example.com/a" },
+    { "title": "Sample source B (placeholder)", "url": "https://example.com/b" }
+  ]
+}

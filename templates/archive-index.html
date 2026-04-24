@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domino Watch — Archive</title>
+<style>{{ styles }}</style>
+</head>
+<body>
+
+<header>
+  <h1>Domino Watch — Archive</h1>
+  <div class="meta">
+    {{ entries | length }} brief(s) on file.
+    <a href="../">Back to today</a>
+  </div>
+</header>
+
+<section>
+  <table>
+    <thead>
+      <tr><th>Date</th><th>Regime</th><th>1w</th><th>2w</th><th>3w</th><th>4w</th><th></th></tr>
+    </thead>
+    <tbody>
+      {% for e in entries %}
+      <tr>
+        <td>{{ e.date }}</td>
+        <td><span class="regime {{ e.regime_flag }}">{{ e.regime_flag }}</span></td>
+        <td><span class="grade grade-{{ e.grades['1w'].grade }}">{{ e.grades['1w'].grade }}</span></td>
+        <td><span class="grade grade-{{ e.grades['2w'].grade }}">{{ e.grades['2w'].grade }}</span></td>
+        <td><span class="grade grade-{{ e.grades['3w'].grade }}">{{ e.grades['3w'].grade }}</span></td>
+        <td><span class="grade grade-{{ e.grades['4w'].grade }}">{{ e.grades['4w'].grade }}</span></td>
+        <td><a href="{{ e.date }}.html">view</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  <p class="disclaimer">Not financial advice.</p>
+</footer>
+
+</body>
+</html>
