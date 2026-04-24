@@ -69,6 +69,19 @@ a { color: var(--link); }
   font-size: 0.9rem;
 }
 
+.disclaimer-banner {
+  background: rgba(255,180,84,0.08);
+  border: 1px solid var(--accent);
+  border-left-width: 4px;
+  color: var(--fg);
+  padding: 0.6rem 0.85rem;
+  border-radius: 6px;
+  margin: 0.75rem 0 1.25rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.disclaimer-banner strong { color: var(--accent); }
+
 table {
   width: 100%;
   border-collapse: collapse;
