@@ -38,8 +38,10 @@
     <span class="regime {{ brief.regime_flag }}">
       {% if brief.regime_flag == 'green' %}🟢 CARRY-ON{% elif brief.regime_flag == 'yellow' %}🟡 CARRY-NEUTRAL{% else %}🔴 CARRY-OFF{% endif %}
     </span>
+    <span class="stage stage-{{ brief.domino_stage.stage }}">Stage {{ brief.domino_stage.stage }} — {{ brief.domino_stage.label }}</span>
     {{ brief.regime_justification }}
   </p>
+  <p class="meta"><strong>Stage rationale:</strong> {{ brief.domino_stage.justification }}</p>
 
   <table>
     <thead>
@@ -74,6 +76,24 @@
         <td>{{ row.level if row.level is not none else '—' }}</td>
         <td>{{ row.change_1d if row.change_1d is not none else '—' }}</td>
         <td>{{ row.note }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Trigger Map</h2>
+  <table>
+    <thead>
+      <tr><th>Trigger</th><th>Status</th><th>Note</th></tr>
+    </thead>
+    <tbody>
+      {% for t in brief.trigger_map %}
+      <tr>
+        <td>{{ t.trigger }}</td>
+        <td><span class="trigger trigger-{{ t.status }}">{{ t.status }}</span></td>
+        <td>{{ t.note }}</td>
       </tr>
       {% endfor %}
     </tbody>

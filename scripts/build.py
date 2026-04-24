@@ -40,6 +40,7 @@ def load_json(path: Path):
 
 
 def load_briefs() -> list[dict]:
+    # Top-level briefs only; subdirs (e.g. _legacy/) are excluded.
     briefs = [load_json(p) for p in sorted(BRIEFS_DIR.glob("*.json"))]
     briefs.sort(key=lambda b: b["date"])
     return briefs
