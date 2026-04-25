@@ -176,3 +176,15 @@ Narrative content guidance:
   change in one sentence in `narrative.p1`.
 - The unwind prior is a tiebreaker, not a thesis-confirming machine.
   If the data is clearly benign, grade benign.
+
+# FX Conventions (sanity-check before writing)
+- USD/JPY is quoted to 2 decimals. **One pip = 0.01 yen**.
+- "Distance to 160" from 159.82 is **0.18 yen ≈ 18 pips**, NOT
+  "20 yen". Saying "X yen from 160" only makes sense for whole-unit
+  moves (e.g., 145 → 160 is "15 yen").
+- For sub-yen distances, use pips OR decimals: "18 pips below 160" or
+  "0.18 yen below 160".
+- bps = basis points = 0.01 percentage point. Spread "187 bps" means
+  1.87 percentage points.
+- Always sanity-check that the magnitude word matches the number
+  before emitting.

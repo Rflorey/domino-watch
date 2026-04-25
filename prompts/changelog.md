@@ -7,6 +7,12 @@ spec evolves.
 ## 2026-04-24
 - Initial spec captured. No changes yet.
 
+## 2026-04-25 (v2.2)
+- Added FX Conventions section to spec (pips vs yen, bps).
+  Yesterday's brief said "within 20 yen of 160" when it meant
+  18 pips / 0.18 yen — Sourcery review caught it. Spec now
+  explicitly forbids that magnitude error.
+
 ## 2026-04-24 (v2.1)
 - Tightened verbosity:
   - Stack capped at 8–12 rows; explicit Tier 1 (mandatory) /
