@@ -40,39 +40,36 @@ from the prior brief.
 
 # Mandatory Data Pulls (every run, via web_search)
 Group your search and reporting by domino. If a datapoint can't be
-retrieved, set its level/change to null and note "unavailable" in the
-relevant Stack note — do NOT fabricate.
+retrieved, **omit it from the Stack** rather than emitting a null row.
+The Stack is the high-signal scan; null rows are noise. Mention any
+important misses in `narrative.p2` ("FX risk reversals unavailable").
+
+The Stack must contain **between 8 and 12 rows total** — not more.
+Prioritize by influence. Tier 1 below is required; Tier 2 is included
+only if the data is fresh and adds signal.
 
 ## A. Carry Mechanics (the trade itself)
-1. **USD/JPY spot** — level, 1d, 5d, **5d % change** (pace matters more than level)
-2. **USD/JPY 1M implied vol** (and 3M if available)
-3. **USD/JPY 1M risk reversal** (25-delta) — JPY-call skew = hedging the unwind
-4. **USD/JPY 3M FX swap basis** (or cross-currency basis) — funding stress gauge
-5. **TOPIX Banks index** — JGB yield beneficiary / carry funder proxy
+- **Tier 1:** USD/JPY spot (level + 5d %), USD/JPY 1M implied vol, US-JP 10Y spread (computed)
+- **Tier 2:** USD/JPY 1M 25Δ risk reversal, 3M FX swap basis, TOPIX Banks index
 
 ## B. Policy Reaction Function (BOJ / MOF / Fed)
-6. **JGB 10Y yield** — level, 1d, recent range
-7. **US 10Y yield** — level, 1d
-8. **Fed funds futures / SOFR Dec curve** — cuts priced (qualitative if exact OIS unavailable)
-9. **Next BOJ meeting date** + OIS-implied probability of next hike (qualitative if needed)
-10. **Last 24h headlines:** BOJ / MOF / Ueda / Katayama / Treasury / Fed
-11. **Recent Japan data:** core CPI ex-fresh-food, scheduled cash earnings, shunto results (if released within window)
+- **Tier 1:** JGB 10Y, US 10Y, next BOJ meeting date + decision risk, last-24h BOJ/MOF headline (one-line)
+- **Tier 2:** Fed funds Dec curve, Japan core CPI ex-fresh-food, scheduled cash earnings, shunto results
 
 ## C. Cross-Asset Stress (the contagion channels)
-12. **MOVE index** — rates vol, leading indicator
-13. **VIX** — equity vol regime
-14. **HY credit spread** (HYG/JNK ETF or CDX HY proxy)
-15. **Gold spot** vs DXY — true safe-haven flow read
-16. **DXY** — level, 1d
-17. **Nikkei 225 close** — level, 1d %
+- **Tier 1:** MOVE index, VIX
+- **Tier 2:** HY credit spread (HYG/JNK or CDX HY), gold, DXY, Nikkei 225
 
 ## D. Geopolitics / Energy (the imported-inflation channel)
-18. **WTI or Brent crude** — level, 1d, 5d %
-19. **Brief energy/geopolitics note** — Strait of Hormuz, OPEC+, LNG, anything affecting Japan import bill
+- **Tier 1:** WTI/Brent crude (level + 5d %)
+- **Tier 2:** ¥/bbl crude (computed), brief geopolitical note
 
 ## E. Crypto Liquidity Sympathy
-20. **BTC and XRP spot** — level, 1d
-21. **BTC open interest direction** (qualitative) and BTC-DXY 30d correlation if accessible
+- **Tier 1:** BTC spot
+- **Tier 2:** XRP spot, BTC open interest direction, BTC-DXY 30d correlation
+
+Never fabricate. Never pad. If you can't retrieve a Tier 1 item, leave
+it out and flag it in `narrative.p2`.
 
 # Computed Anchors (compute each run, show the math briefly)
 - **US-JP 10Y spread** (bps) = US 10Y − JGB 10Y
@@ -112,26 +109,33 @@ inside weeks 2-3 and resolves by week 4).
 Regime should be consistent with `domino_stage`:
 Stages 0–1 → green, Stages 1–2 → yellow, Stages 3–5 → red.
 
-# Trigger Map (REQUIRED — table of known dominos)
-Provide status for each known trigger as **latent / armed / cocked /
-firing**:
+# Trigger Map (REQUIRED — highest-influence dominos only)
 
+The Trigger Map is a scan, not an inventory. Cap at **6 rows**.
+Include only triggers whose status is currently meaningful (anything
+at `armed`, `cocked`, or `firing`) plus any `latent` trigger that the
+operator should not lose sight of given today's setup.
+
+Status values: **latent / armed / cocked / firing**.
 - `latent` — not currently relevant
 - `armed` — set up but no near-term catalyst
 - `cocked` — primed, catalyst inside 1–2 week window
 - `firing` — actively unwinding now
 
-Mandatory triggers to assess every run:
+Mandatory triggers to **assess** (include only if non-latent OR
+contextually important):
 1. **MOF FX intervention** (USDJPY at watch line, rate-check rumors)
 2. **BOJ rate hike surprise** (or accelerated normalization signal)
-3. **JGB 10Y break above 2.50%** (or current cycle high)
-4. **USDJPY 1M risk reversals flipping to JPY-call premium**
-5. **MOVE index spike above 100** (rates-vol regime change)
-6. **HY credit spread widening > 50 bps in a week**
-7. **Strait of Hormuz / oil shock pushing ¥/bbl > prior peak**
+3. **JGB 10Y break above prior cycle high**
+4. **MOVE index spike above 100** (rates-vol regime change)
+5. **HY credit spread widening > 50 bps in a week**
+6. **Energy / Hormuz shock pushing ¥/bbl > prior peak**
+7. **USDJPY 1M risk reversals flipping to JPY-call premium**
 8. **Cross-currency basis blow-out (USD funding stress)**
 
-Add 1–2 ad-hoc triggers if the news cycle warrants.
+Suppress `latent` triggers from the table when the trigger map already
+has 4+ non-latent rows. Add up to 1 ad-hoc trigger if a current event
+warrants it (e.g., specific geopolitical headline).
 
 # Output Format (strict)
 
@@ -159,6 +163,9 @@ Narrative content guidance:
   rotation; brief comment on what this means for crypto positioning
 
 # Discipline
+- The Stack is high-signal triage (8–12 rows max). The Trigger Map is
+  the threat scan (6 rows max). Verbose tables dilute the signal.
+  Depth belongs in `narrative` and `horizon_rationale`.
 - Grades 3-4 weeks out are scenario-weighted, NOT predictions. Label
   them as such.
 - If data conflicts, say so. Don't paper over it.

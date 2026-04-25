@@ -7,6 +7,18 @@ spec evolves.
 ## 2026-04-24
 - Initial spec captured. No changes yet.
 
+## 2026-04-24 (v2.1)
+- Tightened verbosity:
+  - Stack capped at 8–12 rows; explicit Tier 1 (mandatory) /
+    Tier 2 (if available) priority within each domino group.
+  - Trigger Map capped at 6 rows; suppress `latent` rows once
+    4+ non-latent triggers are present.
+  - Schema enforces stack maxItems=12, trigger_map maxItems=6.
+  - Stack omits unavailable data instead of emitting null rows;
+    misses noted in `narrative.p2`.
+- Discipline note added: depth belongs in narrative and horizon
+  rationale, not in tables.
+
 ## 2026-04-24 (v2)
 - Major spec expansion:
   - Added explicit **Domino Sequence** (Stages 0–5) and required

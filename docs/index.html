@@ -119,6 +119,35 @@ tbody tr:nth-child(even) { background: var(--table-stripe); }
 .grade-D { background: #56a564;       color: #fff; }
 .grade-F { background: var(--green);  color: #fff; }
 
+.stage {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-right: 0.4rem;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+.stage-0, .stage-1 { color: var(--green);  border-color: var(--green); }
+.stage-2           { color: var(--yellow); border-color: var(--yellow); }
+.stage-3, .stage-4, .stage-5 { color: var(--red); border-color: var(--red); }
+
+.trigger {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: &#34;SF Mono&#34;, Menlo, Consolas, monospace;
+}
+.trigger-latent  { background: rgba(154,164,178,0.18); color: var(--muted); }
+.trigger-armed   { background: rgba(210,153,34,0.18);  color: var(--yellow); }
+.trigger-cocked  { background: rgba(240,136,62,0.22);  color: #f0883e; }
+.trigger-firing  { background: var(--red);             color: #fff; }
+
 .bottom-line {
   border-left: 3px solid var(--accent);
   padding: 0.5rem 0.75rem;
@@ -161,7 +190,7 @@ footer nav a { margin-right: 0.75rem; }
   <h1>Domino Watch</h1>
   <div class="meta">
     Brief for <strong>2026-04-24</strong>
-    &middot; generated 2026-04-24T14:00:00-05:00
+    &middot; generated 2026-04-25T00:00:00+00:00
   </div>
   <div class="disclaimer-banner" role="note">
     <strong>Not financial advice.</strong> This site is a personal
@@ -179,8 +208,10 @@ footer nav a { margin-right: 0.75rem; }
   <p>
     <span class="regime yellow">
 🟡 CARRY-NEUTRAL    </span>
-    USDJPY testing 160, BOJ meeting next week, Katayama warns intervention possible, JGB yields elevated—carry under pressure but unwind not yet triggered.
+    <span class="stage stage-2">Stage 2 — Pre-Intervention</span>
+    USDJPY approaching 160 watch line with MOF warning of &#39;decisive action&#39;; BOJ likely on hold but inflation rising; spreads intact but intervention risk elevated.
   </p>
+  <p class="meta"><strong>Stage rationale:</strong> USDJPY at 159.82, nearing 160 MOF watch line; Finance Minister Katayama warned of &#39;free hand to intervene&#39; and readiness for &#39;decisive action&#39;; vol still subdued but risk reversals unavailable; carry intact but fragile.</p>
 
   <table>
     <thead>
@@ -191,30 +222,30 @@ footer nav a { margin-right: 0.75rem; }
         <td>1 week</td>
         <td><span class="grade grade-C">C</span></td>
         <td>Watchful</td>
-        <td>BOJ April 30 meeting, USDJPY 159.8 near intervention threshold</td>
+        <td>BOJ meeting 27-28 Apr; USDJPY at intervention threshold; Katayama rhetoric escalating; spread ~186 bps still supports carry but MOF action risk rising.</td>
       </tr>
       <tr>
         <td>2 weeks</td>
         <td><span class="grade grade-C">C</span></td>
         <td>Watchful</td>
-        <td>BOJ likely holds, post-meeting rhetoric may tilt hawkish June signal</td>
+        <td>Post-BOJ guidance critical; if BOJ signals June hike and USDJPY stays above 160, intervention probability jumps; oil still elevated at ~$95 WTI keeping yen pressure on.</td>
       </tr>
       <tr>
         <td>3 weeks</td>
-        <td><span class="grade grade-D">D</span></td>
-        <td>Unlikely</td>
-        <td>If BOJ placates markets, pressure eases temporarily</td>
+        <td><span class="grade grade-C">C</span></td>
+        <td>Watchful</td>
+        <td>Scenario-weighted: BOJ likely preps June hike, compressing forward spread expectations; Middle East uncertainty keeps energy-driven inflation risk alive; fragile setup persists.</td>
       </tr>
       <tr>
         <td>4 weeks</td>
-        <td><span class="grade grade-C">C</span></td>
-        <td>Watchful</td>
-        <td>June normalization talk re-emerges, energy prices remain elevated</td>
+        <td><span class="grade grade-D">D</span></td>
+        <td>Unlikely</td>
+        <td>If BOJ signals steady normalization path and oil retreats, carry can stabilize; MOF intervention would be one-off, not systemic unwind trigger unless sustained above 165.</td>
       </tr>
     </tbody>
   </table>
 
-  <div class="bottom-line"><strong>Bottom line.</strong> USDJPY at 159.8, 0.16 away from the 160 line Katayama called intervention-ready. BOJ meets April 30; consensus is hold-at-0.75%, but expects hawkish June tilt. JGB 10Y at 2.44%, spread 187 bps still wide. Crude spiked 17% this week on Strait of Hormuz closure, keeping inflation fears alive. Carry trades remain profitable but fragile—unwind not in progress, but setup is primed.</div>
+  <div class="bottom-line"><strong>Bottom line.</strong> USDJPY at 159.82 tests MOF red line; Katayama warned of &#39;decisive action,&#39; BOJ meets 27-28 April likely signaling June hike. Carry spread ~186 bps intact but intervention risk elevated. Oil ~$95, core CPI 1.8% (ex-food/energy 2.4%). VIX 19.3, MOVE 67.7—complacency persists. Grades C/C/C/D: watchful near-term, unwind unlikely absent sustained &gt;165 break or BOJ shock hawkishness. BTC ~$78k stable; crypto liquidity sympathy muted.</div>
 </section>
 
 <section>
@@ -225,64 +256,105 @@ footer nav a { margin-right: 0.75rem; }
     </thead>
     <tbody>
       <tr>
-        <td>USD/JPY</td>
+        <td>USD/JPY spot</td>
         <td>159.82</td>
-        <td>+0.11 (+0.07%)</td>
-        <td>Testing 160; Katayama warned intervention possible if one-sided moves continue.</td>
-      </tr>
-      <tr>
-        <td>JGB 10Y</td>
-        <td>2.44%</td>
-        <td>+1 bp</td>
-        <td>Elevated by energy-driven inflation fears; range 2.38–2.49% this week.</td>
-      </tr>
-      <tr>
-        <td>US 10Y</td>
-        <td>4.31%</td>
-        <td>+7 bp</td>
-        <td>Iran tensions, stalled peace talks push yields higher; Fed hold priced for April 30.</td>
+        <td>+0.07%</td>
+        <td>Near 160 MOF watch line; 5d +0.41%; 30d avg 159.3; pace elevated but orderly—intervention chatter loud</td>
       </tr>
       <tr>
         <td>US-JP 10Y spread</td>
-        <td>187 bps</td>
-        <td>+6 bp</td>
-        <td>Widened slightly; carry remains attractive but vol rising.</td>
+        <td>186</td>
+        <td>-6 bps</td>
+        <td>US 10Y 4.31%, JGB 10Y 2.44%; spread compressed but still wide enough to support carry; JGB at 1wk high on Iran inflation</td>
       </tr>
       <tr>
-        <td>WTI Crude</td>
-        <td>$97.40</td>
-        <td>+$4.87 (+5.3%)</td>
-        <td>Up 17% week on Strait closure; Trump extended ceasefire indefinitely but blockade persists.</td>
+        <td>USD/JPY 1M implied vol</td>
+        <td>~7.7</td>
+        <td>—</td>
+        <td>Estimated from MacroMicro Apr 17 data; subdued despite proximity to intervention zone—complacency flag</td>
       </tr>
       <tr>
-        <td>¥/bbl (crude)</td>
-        <td>¥15,568</td>
-        <td>+¥868</td>
-        <td>Japan&#39;s import bill surge pressures yen, BOJ inflation forecasts rising.</td>
+        <td>WTI crude</td>
+        <td>95.13</td>
+        <td>-0.76%</td>
+        <td>5d +17%; Iran war blockade keeping prices elevated; ¥/bbl = 15,205 yen (159.82 × 95.13)—import inflation pressure high</td>
+      </tr>
+      <tr>
+        <td>MOVE index</td>
+        <td>67.7</td>
+        <td>-3.12%</td>
+        <td>Rates vol subdued despite 10Y rally; well below 100 threshold—no regime change signal</td>
+      </tr>
+      <tr>
+        <td>VIX</td>
+        <td>19.31</td>
+        <td>+2.06%</td>
+        <td>Equities complacent; S&amp;P near highs; risk assets still bid despite geopolitical noise</td>
+      </tr>
+      <tr>
+        <td>BTC spot</td>
+        <td>77736</td>
+        <td>+0.45%</td>
+        <td>Holding $77-78k; stable despite DXY 98.5; no crypto sympathy unwind signal yet</td>
       </tr>
       <tr>
         <td>Nikkei 225</td>
-        <td>59,716</td>
-        <td>+576 (+0.97%)</td>
-        <td>Hit 60,014 intraday ATH Thu, pulled back; tech bid but intervention chatter weighs.</td>
+        <td>59716</td>
+        <td>+1.01%</td>
+        <td>Resilient; near 60k highs; no equity selloff despite USDJPY stress—divergence worth watching</td>
       </tr>
       <tr>
-        <td>DXY</td>
-        <td>98.57</td>
-        <td>-0.21 (-0.21%)</td>
-        <td>Up 0.4% week; safe-haven bid from Iran standoff, but off highs as ceasefire extended.</td>
+        <td>Japan core CPI (Mar)</td>
+        <td>1.8%</td>
+        <td>—</td>
+        <td>First rise in 5mo but below BOJ 2% target; ex-food-energy 2.4%—subsidies masking energy shock; BOJ dilemma</td>
       </tr>
       <tr>
-        <td>BTC</td>
-        <td>$78,126</td>
-        <td>+$316 (+0.4%)</td>
-        <td>Stalled below $80k; -0.90 30d correlation w/DXY, open interest down 6%—momentum cooling.</td>
+        <td>BOJ next meeting</td>
+        <td>27-28 Apr</td>
+        <td>—</td>
+        <td>Consensus: hold at 0.75%, signal June hike; growth cut, inflation forecast raised; key for forward guidance</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Trigger Map</h2>
+  <table>
+    <thead>
+      <tr><th>Trigger</th><th>Status</th><th>Note</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MOF FX intervention</td>
+        <td><span class="trigger trigger-cocked">cocked</span></td>
+        <td>USDJPY 159.82, &lt;20 yen from 160 watch line; Katayama warned &#39;free hand&#39; and &#39;decisive action&#39; on Apr 23-24; rate-checks likely underway</td>
       </tr>
       <tr>
-        <td>XRP</td>
-        <td>$1.43</td>
-        <td>+$0.01 (+1.2%)</td>
-        <td>Consolidating post-SEC resolution; up ~5% month, modest institutional inflows.</td>
+        <td>BOJ rate hike surprise</td>
+        <td><span class="trigger trigger-armed">armed</span></td>
+        <td>Market expects hold 27-28 Apr, June hike signal; surprise April hike ~10% probability but would trigger sharp unwind if delivered</td>
+      </tr>
+      <tr>
+        <td>JGB 10Y break above prior cycle high</td>
+        <td><span class="trigger trigger-armed">armed</span></td>
+        <td>JGB 10Y 2.44%, near 1wk high; prior 2026 peak ~2.5%; Iran energy shock pushing yields; breakout would tighten carry-to-vol</td>
+      </tr>
+      <tr>
+        <td>MOVE index spike above 100</td>
+        <td><span class="trigger trigger-latent">latent</span></td>
+        <td>MOVE 67.7, down -3.12%; far from 100; no rates-vol regime change imminent despite recent UST volatility</td>
+      </tr>
+      <tr>
+        <td>Energy / Hormuz shock pushing ¥/bbl &gt; prior peak</td>
+        <td><span class="trigger trigger-cocked">cocked</span></td>
+        <td>¥/bbl 15,205 yen (WTI 95 × 159.82); Strait of Hormuz blockade ongoing; further oil spike + weak yen = BOJ forced hawkish</td>
+      </tr>
+      <tr>
+        <td>USDJPY 1M risk reversals flipping to JPY-call premium</td>
+        <td><span class="trigger trigger-armed">armed</span></td>
+        <td>Data unavailable for Apr 24; historically flips near intervention; would confirm market pricing MOF action</td>
       </tr>
     </tbody>
   </table>
@@ -290,24 +362,24 @@ footer nav a { margin-right: 0.75rem; }
 
 <section class="narrative">
   <h2>The Narrative</h2>
-  <p>USDJPY rose 7 bps to 159.82 overnight, closing within 18 bps of the 160 threshold where Japanese officials have signaled readiness to intervene. Finance Minister Katayama reiterated authorities retain a &#39;free hand&#39; to act against speculative moves. WTI surged $4.87 (5.3%) to $97.40 on news Trump extended the Iran ceasefire indefinitely but maintained the naval blockade of Iranian ports and the Strait of Hormuz—the waterway remains effectively closed, cutting Middle East oil flows and driving energy prices up 17% week-over-week. US 10Y yields jumped 7 bps to 4.31% as inflation concerns resurface; JGB 10Y edged up 1 bp to 2.44%, near the upper end of its recent range. Nikkei hit an intraday ATH of 60,014 Thursday morning before retreating 0.68% to close 59,179, then rebounded 0.97% Friday to 59,716—tech strength offset by FX intervention chatter. DXY dipped 0.21% to 98.57 but is up 0.4% week as safe-haven flows persist.</p>
-  <p>The quant anchors paint a fragile carry picture. US-JP 10Y spread widened 6 bps to 187 bps—still ample for carry trades, but the move came from the US side (Iran risk premium) rather than JGB compression, meaning the unwind thesis hasn&#39;t triggered yet. Yen-denominated crude spiked ¥868 to ¥15,568/bbl, a direct hit to Japan&#39;s terms of trade and a boost to imported inflation—exactly the dynamic that forces the BOJ&#39;s hand. The BOJ meets April 30; market consensus is hold at 0.75%, but reports indicate policymakers will signal readiness to resume normalization as early as June if energy-driven inflation persists. USDJPY&#39;s 5-day range (157.86–159.82) shows it&#39;s coiled at the top; a break above 160 likely draws intervention, a rejection could ease near-term pressure. Domino sequence: we&#39;re at Stage 2 (spread wide, but BOJ rhetoric shifting + intervention risk rising). Not yet Stage 3 (spread compressing, yen strengthening, unwinding).</p>
-  <p>Crypto liquidity read is mixed. BTC stalled at $78,126, failing to reclaim $80k despite a 5-day rally; 30-day correlation with DXY hit -0.90 (most negative since 2022), and open interest dropped 6% in 24 hours—levered longs are unwinding, suggesting risk appetite is cooling even as equities rally. XRP gained 1.2% to $1.43, benefiting from post-SEC clarity but volume is tepid. The yen carry unwind thesis suggests that if USDJPY reverses sharply, yen-funded leverage across risk assets (including crypto) unwinds in tandem. Right now, BTC&#39;s failure to break out + rising DXY inverse correlation + falling open interest = early-stage risk-off positioning. Russ&#39;s 15,300 XRP is up modestly month-over-month but faces headwinds if broader carry unwind accelerates. If BOJ surprises hawkish or USDJPY breaks below 157, expect crypto liquidity to drain fast as yen-funded positions get squeezed.</p>
+  <p>USDJPY climbed to 159.82 (+0.07% overnight), within 20 yen of the 160 MOF watch line. Finance Minister Katayama reiterated Japan retains a &#39;free hand to intervene&#39; and stands ready for &#39;decisive action against speculative moves&#39; at Bloomberg event Apr 23. Japan March core CPI rose to 1.8% YoY (first pickup in 5mo) but stayed below BOJ 2% target; core ex-food-energy 2.4% shows underlying pressure masked by fuel subsidies. WTI pulled back to $95.13 (-0.76%) after +17% week on Iran blockade hopes for diplomacy. No stage change—remains Stage 2 Pre-Intervention—but cocked.</p>
+  <p>Carry mechanics: US-JP 10Y spread 186 bps (4.31% - 2.44%), compressed -6 bps as JGB yields spiked on energy inflation fears. USDJPY 1M implied vol estimated ~7.7% (MacroMicro Apr 17)—still subdued despite proximity to intervention zone, a complacency flag. Carry-to-vol proxy ~24 (186/7.7), healthy but compressing. USDJPY pace: 5d +0.41%, within normal range; MOF historically reacts to *pace* not level, so current drift tolerable but accelerating risk high if BOJ signals June hike 27-28 Apr. Computed ¥/bbl = 15,205 yen, elevated. Distance from 60d mean (157.3): ~160 bps stretched but not extreme. Grades C/C/C/D: watchful 1-3wk on BOJ meeting, intervention proximity, and oil; week 4 downgrades to D (unlikely) if BOJ normalizes guidance cleanly and oil retreats—unwind requires sustained &gt;165 or shock, not single intervention. Applied unwind prior as tiebreaker between C and D for week 1-2; data genuinely ambiguous (intervention risk vs. carry spread intact)—would otherwise grade D absent Katayama rhetoric escalation.</p>
+  <p>BTC held $77,736 (+0.45%), flat 1wk, resilient despite DXY 98.5 and USDJPY stress. No crypto sympathy unwind signal; BTC-DXY correlation data unavailable but price action suggests decoupling from FX vol. Open interest direction unclear (data missing). XRP $1.43 (+0.58%), similar stability. Interpretation: crypto liquidity still risk-on; if carry unwinds materially (Stage 4), expect BTC to drain toward $70-72k as levered positions close and DXY spikes. Current $77-78k consolidation neutral for crypto positioning—no urgency to de-risk, but no fresh bid either. Watch BTC reaction to BOJ 27-28 Apr for clues on whether crypto front-runs or lags carry unwind.</p>
 </section>
 
 <section>
   <h2>Horizon Rationale</h2>
   <ul>
-    <li><strong>Wk 1 → Wk 2:</strong> Grade holds at C through BOJ meeting April 30. If BOJ holds but signals June hike readiness (as reports suggest), USDJPY stays pinned near 160, intervention risk elevated but unwind not triggered. Spread remains wide, carry profitable but fragile.</li>
-    <li><strong>Wk 2 → Wk 3:</strong> Drops to D if BOJ rhetoric is dovish enough to placate markets and USDJPY pulls back from 160. Energy prices are wildcat—if Iran talks resume or Strait reopens, crude falls, JGB yields ease, pressure dissipates temporarily. Scenario-weighted: base case is relief, tail risk is intervention or surprise hawkish move.</li>
-    <li><strong>Wk 3 → Wk 4:</strong> Back to C as June meeting (mid-May decision) comes into view. BOJ has telegraphed normalization conditional on wage/inflation data; if energy stays elevated and core CPI ticks up, June hike probability rises, re-tightening the spring. Directional lean: pressure rebuilds unless geopolitical backdrop shifts meaningfully.</li>
+    <li><strong>Wk 1 → Wk 2:</strong> Week 1-2 grades C (watchful): BOJ meeting 27-28 April is the catalyst. Consensus expects hold at 0.75% but hawkish signal for June hike. If BOJ revises inflation up (likely given Mar CPI and oil) and trims growth, forward spread expectations compress. USDJPY already at 159.82; any post-meeting drift toward 161+ invites MOF intervention. Katayama rhetoric escalated this week (&#39;decisive action&#39;), raising probability of action from ~30% to ~50% if 160 breached. VIX 19.3, MOVE 67.7—vol not pricing intervention risk. Grade reflects elevated but not imminent unwind risk; data-driven tiebreaker leaned one notch more alert per prior given ambiguous MOF posture.</li>
+    <li><strong>Wk 2 → Wk 3:</strong> Week 2-3 grade C (watchful) extends: scenario-weighted for post-BOJ guidance digestion. If BOJ signals June hike (median economist view), carry forward curve steepens less attractively. Oil risk persists (Hormuz blockade unresolved); further WTI spike toward $100+ would force BOJ hand earlier. Key variable: does USDJPY stabilize 158-160 or break higher? Intervention would likely be one-off verbal/spot, not systemic unwind trigger, but increases fragility. Week 3 slightly elevated vs. week 2 because June meeting (15-16 June per BOJ calendar) comes into view—market begins pricing hike probability.</li>
+    <li><strong>Wk 3 → Wk 4:</strong> Week 3-4 grade steps down C to D (unlikely): if BOJ delivers clean forward guidance (steady normalization, no shock hike), spread expectations stabilize. Oil diplomacy progress (Iran talks resuming per Apr 24 headlines) could pull WTI back to $85-90 range, easing yen import pressure and reducing BOJ urgency. MOF intervention, if it occurs, would be absorbed as policy tweak not regime shift unless USDJPY sustained &gt;165 (far from current). Week 4 downgrades to D because absent a surprise catalyst (exogenous shock, BOJ April hike, Hormuz closure extension), the setup reverts to &#39;pressure building&#39; (Stage 1) rather than acute unwind risk. Spread 186 bps still supports carry; VIX/MOVE complacent; equity bid intact.</li>
   </ul>
 </section>
 
 <section>
   <h2>Watch List</h2>
   <ul class="watch-list">
-<li>BOJ policy statement April 30—look for language on June normalization timeline and inflation forecast revisions (expected: lift CPI, cut growth).</li><li>USDJPY 160.00 level—break above likely triggers MOF/BOJ verbal or actual intervention; rejection signals near-term relief.</li><li>US-Iran peace talks—any resumption or Strait of Hormuz reopening would collapse WTI, ease JGB yields, reduce BOJ hawkish pressure.</li><li>USDJPY 1M implied vol—if available data shows spike above recent range, carry-to-vol deteriorates, unwind risk rises.</li><li>JGB 10Y above 2.50%—would mark 27-year high, force BOJ to address fiscal/inflation narrative explicitly.</li>  </ul>
+<li>BOJ policy statement 28 April—language on June hike timing and inflation forecast revision</li><li>USDJPY daily close above 160.00—triggers high probability of MOF verbal or spot intervention within 24-48hr</li><li>WTI crude direction next 3 days—sustained move above $100 or retreat below $90 changes BOJ calculus materially</li><li>USD/JPY 1M risk reversals (when available)—flip to JPY-call premium would confirm market pricing intervention</li><li>Nikkei 225 reaction to BOJ—sharp selloff (&gt;2%) would signal equity market pricing yen strength ahead, frontrunning unwind</li>  </ul>
 </section>
 
 <section>
@@ -319,13 +391,18 @@ footer nav a { margin-right: 0.75rem; }
 <section>
   <h2>Sources</h2>
   <ul class="sources">
-    <li><a href="https://tradingeconomics.com/japan/currency" rel="noopener noreferrer" target="_blank">Trading Economics - USD/JPY April 24, 2026</a></li>
-    <li><a href="https://tradingeconomics.com/japan/government-bond-yield" rel="noopener noreferrer" target="_blank">Trading Economics - Japan 10Y Bond Yield April 24, 2026</a></li>
-    <li><a href="https://tradingeconomics.com/united-states/government-bond-yield" rel="noopener noreferrer" target="_blank">Trading Economics - US 10Y Treasury Note Yield April 24, 2026</a></li>
-    <li><a href="https://tradingeconomics.com/commodity/crude-oil" rel="noopener noreferrer" target="_blank">Trading Economics - WTI Crude Oil Price April 24, 2026</a></li>
-    <li><a href="https://www.investing.com/news/stock-market-news/japan-stocks-higher-at-close-of-trade-nikkei-225-up-091-4634726" rel="noopener noreferrer" target="_blank">Investing.com - Nikkei 225 April 24, 2026</a></li>
-    <li><a href="https://fortune.com/article/price-of-bitcoin-04-24-2026/" rel="noopener noreferrer" target="_blank">Fortune - Bitcoin Price April 24, 2026</a></li>
-    <li><a href="https://www.coindesk.com/price/xrp" rel="noopener noreferrer" target="_blank">CoinDesk - XRP Price April 24, 2026</a></li>
+    <li><a href="https://tradingeconomics.com/japan/currency" rel="noopener noreferrer" target="_blank">Trading Economics - Japan Currency (USDJPY Apr 24 2026)</a></li>
+    <li><a href="https://tradingeconomics.com/united-states/government-bond-yield" rel="noopener noreferrer" target="_blank">Trading Economics - US 10Y Treasury Yield</a></li>
+    <li><a href="https://tradingeconomics.com/japan/government-bond-yield" rel="noopener noreferrer" target="_blank">Trading Economics - Japan 10Y JGB Yield</a></li>
+    <li><a href="https://finance.yahoo.com/quote/%5EMOVE/" rel="noopener noreferrer" target="_blank">Yahoo Finance - MOVE Index Apr 23 2026</a></li>
+    <li><a href="https://finance.yahoo.com/quote/%5EVIX/" rel="noopener noreferrer" target="_blank">Yahoo Finance - VIX Apr 23 2026</a></li>
+    <li><a href="https://tradingeconomics.com/commodity/crude-oil" rel="noopener noreferrer" target="_blank">Trading Economics - WTI Crude Oil Apr 24 2026</a></li>
+    <li><a href="https://www.coindesk.com/price/bitcoin" rel="noopener noreferrer" target="_blank">CoinDesk - Bitcoin Price Apr 24 2026</a></li>
+    <li><a href="https://www.japantimes.co.jp/business/2026/04/24/markets/boj-preview-april-2026/" rel="noopener noreferrer" target="_blank">Japan Times - BOJ Preview April 2026</a></li>
+    <li><a href="https://www.prismnews.com/news/japan-inflation-stays-below-bank-of-japan-target-as" rel="noopener noreferrer" target="_blank">Prism News - Japan Inflation March 2026</a></li>
+    <li><a href="https://investinglive.com/centralbank/preview-boj-expected-to-stay-on-hold-next-week-but-deliver-hawkish-signal-on-june-move-20260423/" rel="noopener noreferrer" target="_blank">InvestingLive - BOJ Preview &amp; Japan CPI Apr 24 2026</a></li>
+    <li><a href="https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm" rel="noopener noreferrer" target="_blank">BOJ - Monetary Policy Meetings Schedule 2026</a></li>
+    <li><a href="https://www.tradingview.com/news/te_news:544663:0-the-nikkei-225-index-closes-1-01-higher/" rel="noopener noreferrer" target="_blank">TradingView - Nikkei 225 Apr 24 2026</a></li>
   </ul>
 </section>
 
