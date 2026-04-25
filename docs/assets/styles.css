@@ -112,6 +112,35 @@ tbody tr:nth-child(even) { background: var(--table-stripe); }
 .grade-D { background: #56a564;       color: #fff; }
 .grade-F { background: var(--green);  color: #fff; }
 
+.stage {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-right: 0.4rem;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+.stage-0, .stage-1 { color: var(--green);  border-color: var(--green); }
+.stage-2           { color: var(--yellow); border-color: var(--yellow); }
+.stage-3, .stage-4, .stage-5 { color: var(--red); border-color: var(--red); }
+
+.trigger {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+}
+.trigger-latent  { background: rgba(154,164,178,0.18); color: var(--muted); }
+.trigger-armed   { background: rgba(210,153,34,0.18);  color: var(--yellow); }
+.trigger-cocked  { background: rgba(240,136,62,0.22);  color: #f0883e; }
+.trigger-firing  { background: var(--red);             color: #fff; }
+
 .bottom-line {
   border-left: 3px solid var(--accent);
   padding: 0.5rem 0.75rem;
