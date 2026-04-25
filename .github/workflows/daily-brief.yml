@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write   # needed to commit + push the brief
 
+env:
+  # Opt into Node.js 24 runtime for JS-based actions (Node 20 deprecated).
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 concurrency:
   group: daily-brief
   cancel-in-progress: false
