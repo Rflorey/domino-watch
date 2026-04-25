@@ -1,0 +1,46 @@
+name: Daily Brief
+
+on:
+  schedule:
+    # 11:30 UTC = 06:30 CST / 07:30 CDT (after US market open, after Tokyo close)
+    # Adjust the cron if you want a different time. Format: "min hour * * *"
+    - cron: "30 11 * * *"
+  workflow_dispatch:  # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write   # needed to commit + push the brief
+
+concurrency:
+  group: daily-brief
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git identity
+        run: |
+          git config user.name  "domino-watch-bot"
+          git config user.email "bot@users.noreply.github.com"
+
+      - name: Generate, commit, and push brief
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: claude-sonnet-4-5
+        run: |
+          python scripts/run_brief.py --commit --merge
