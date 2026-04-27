@@ -173,9 +173,18 @@ def git_publish(brief_date: str, *, merge_to_main: bool) -> None:
     run(["git", "commit", "-m", f"brief: {brief_date}"])
     if merge_to_main:
         run(["git", "checkout", "main"])
+        # Pull any remote changes that landed while we were generating the
+        # brief, otherwise the push below races and is rejected.
+        run(["git", "pull", "--rebase", "origin", "main"])
         run(["git", "merge", "--no-ff", branch, "-m",
              f"Merge brief {brief_date}"])
-        run(["git", "push", "origin", "main"])
+        # Retry once if a concurrent push slips in between pull and push.
+        try:
+            run(["git", "push", "origin", "main"])
+        except subprocess.CalledProcessError:
+            print("Push rejected; pulling and retrying once...", file=sys.stderr)
+            run(["git", "pull", "--rebase", "origin", "main"])
+            run(["git", "push", "origin", "main"])
         run(["git", "branch", "-d", branch])
     else:
         run(["git", "push", "-u", "origin", branch])
