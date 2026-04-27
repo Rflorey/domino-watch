@@ -89,7 +89,13 @@ regime flag. Return ONLY the JSON object — no other text."""
 
 
 def extract_json_from_response(blocks) -> dict:
-    """Pull the JSON object out of Claude's response blocks."""
+    """Pull the JSON object out of Claude's response blocks.
+
+    Claude sometimes emits a valid JSON object followed by a stray
+    second block, prose, or notes. We scan for the first '{' and use
+    json.JSONDecoder().raw_decode to consume exactly one object,
+    ignoring anything after it.
+    """
     text_parts = [b.text for b in blocks if getattr(b, "type", None) == "text"]
     text = "\n".join(text_parts).strip()
 
@@ -101,12 +107,21 @@ def extract_json_from_response(blocks) -> dict:
             text = text[: -3]
         text = text.strip()
 
-    # Locate the outermost JSON object.
-    start = text.find("{")
-    end = text.rfind("}")
-    if start == -1 or end == -1:
-        raise ValueError(f"No JSON object found in response:\n{text[:500]}")
-    return json.loads(text[start : end + 1])
+    decoder = json.JSONDecoder()
+    # Try every '{' as a candidate start; return the first that parses
+    # to a dict. raw_decode stops at the end of one object, so trailing
+    # text after a valid object is no longer fatal.
+    idx = text.find("{")
+    while idx != -1:
+        try:
+            obj, _ = decoder.raw_decode(text[idx:])
+            if isinstance(obj, dict):
+                return obj
+        except json.JSONDecodeError:
+            pass
+        idx = text.find("{", idx + 1)
+
+    raise ValueError(f"No parseable JSON object in response:\n{text[:500]}")
 
 
 def call_claude(model: str, spec: str, schema: dict,
