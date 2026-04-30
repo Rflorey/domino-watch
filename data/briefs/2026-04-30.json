@@ -1,0 +1,195 @@
+{
+  "date": "2026-04-30",
+  "generated_at": "2026-04-30T08:00:00-04:00",
+  "regime_flag": "red",
+  "regime_justification": "USDJPY fell sharply 2.38% to 156.57 after BOJ April meeting, three dissenters voted for hike, oil at $105+, yen breaking 160 triggered near-term unwind dynamics",
+  "domino_stage": {
+    "stage": 3,
+    "label": "Shock / Trigger",
+    "justification": "USDJPY broke above 160 on Apr-29, triggering sharp JPY rally to 156.57 today; vol spike, three BOJ dissenters signaled hawkish shift"
+  },
+  "grades": {
+    "1w": {
+      "grade": "B",
+      "label": "Likely",
+      "driver": "USDJPY unwound 2.4% in 24h, 160 breach triggered reversal, MOF intervention risk elevated, oil $105+ sustains pressure"
+    },
+    "2w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Unwind momentum may pause; BOJ next meeting June, spread still 187bps wide; carry-to-vol collapsed but not disorderly yet"
+    },
+    "3w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Iran ceasefire talks ongoing; if oil retreats below $95, yen pressure eases; otherwise fragile setup persists"
+    },
+    "4w": {
+      "grade": "D",
+      "label": "Unlikely",
+      "driver": "Time for policy stabilization; unless sustained oil >$110 or second BOJ hike, acute unwind risk fades by late May"
+    }
+  },
+  "bottom_line": "USDJPY crashed 2.4% to 156.57 after briefly piercing 160 yesterday, triggering Stage-3 shock dynamics. Three BOJ dissenters voted for immediate hike, WTI at $105, and JGB 10Y spiked to 2.53%. Carry unwind is actively in progress, but not yet capitulation. Next 5 days critical: watch for MOF rate-checks, further yen strength toward 150, and HY credit widening.",
+  "stack": [
+    {
+      "marker": "USD/JPY spot",
+      "level": 156.57,
+      "change_1d": "-2.38%",
+      "note": "Sharp unwind from 160.37 peak; 18 pips from MOF historical watch-line"
+    },
+    {
+      "marker": "JGB 10Y yield",
+      "level": "2.53%",
+      "change_1d": "+6.5 bps",
+      "note": "Multi-decade high; risk scenario sees 3% if oil persists"
+    },
+    {
+      "marker": "US 10Y yield",
+      "level": "4.42%",
+      "change_1d": "+7 bps",
+      "note": "Fed held, dissent signals no near-term cuts; oil inflation fear"
+    },
+    {
+      "marker": "US-JP 10Y spread",
+      "level": "189 bps",
+      "change_1d": "+0.5 bps",
+      "note": "Spread compressed 200\u2192189 bps in 48h; still wide but narrowing fast"
+    },
+    {
+      "marker": "USDJPY 1M implied vol",
+      "level": "~8.5%",
+      "change_1d": "+1.5%",
+      "note": "Vol spike from 7% lows; carry-to-vol ratio collapsed to 22 from 27"
+    },
+    {
+      "marker": "WTI crude",
+      "level": "$105.00",
+      "change_1d": "-1.8%",
+      "note": "Peaked $111 intraday; Iran blockade ongoing, Trump rejects proposal"
+    },
+    {
+      "marker": "VIX",
+      "level": 18.64,
+      "change_1d": "+4.5%",
+      "note": "Rising but not panic; equity resilience surprising given FX vol"
+    },
+    {
+      "marker": "MOVE index",
+      "level": 68.7,
+      "change_1d": "0%",
+      "note": "Subdued rates vol; not signaling systemic stress yet"
+    },
+    {
+      "marker": "BTC spot",
+      "level": "$76,095",
+      "change_1d": "-0.2%",
+      "note": "Crypto holding despite macro stress; risk-on decoupling or lag?"
+    },
+    {
+      "marker": "Nikkei 225",
+      "level": 59285,
+      "change_1d": "-1.1%",
+      "note": "Pullback from record highs; BOJ hold + 3 dissenters signal policy tension"
+    }
+  ],
+  "trigger_map": [
+    {
+      "trigger": "MOF FX intervention",
+      "status": "cocked",
+      "note": "USDJPY at 156.57; MOF historically intervenes 145-160 band; rate-checks likely imminent given pace"
+    },
+    {
+      "trigger": "BOJ rate hike surprise",
+      "status": "armed",
+      "note": "3/9 board members dissented for immediate hike Apr-28; next meeting June; hawkish shift accelerating"
+    },
+    {
+      "trigger": "JGB 10Y break above prior cycle high",
+      "status": "cocked",
+      "note": "2.53% today; 25-year high territory; risk scenario sees 3% if oil/inflation persists"
+    },
+    {
+      "trigger": "Energy / Hormuz shock",
+      "status": "firing",
+      "note": "WTI $105, peaked $111; Hormuz closed, Trump rejected Iran deal; \u00a5/bbl at 16,440 yen sustains imported inflation"
+    },
+    {
+      "trigger": "MOVE index spike >100",
+      "status": "latent",
+      "note": "MOVE at 68; no rates-vol cascade yet, but watch if JGB spike continues"
+    },
+    {
+      "trigger": "USDJPY 1M risk reversals flipping",
+      "status": "armed",
+      "note": "Vol data sparse; anecdotal JPY-call premium emerging post-160 break; needs confirmation"
+    }
+  ],
+  "narrative": {
+    "p1": "Overnight the carry trade thesis moved from Stage 1 (Pressure Building) to Stage 3 (Shock/Trigger) as USDJPY briefly pierced 160.37 before collapsing 2.38% to 156.57 by NY morning. The catalyst: BOJ's April-28 hold at 0.75% was accompanied by three of nine board members voting for an immediate hike\u2014the highest dissent since 1992\u2014and a risk scenario forecasting core inflation at 3.1% in FY2026 if oil stays above $105. WTI crude spiked to $111 intraday Wednesday before settling at $107, then pulled back to $105 today as Trump rejected Iran's latest Hormuz proposal. JGB 10Y yield surged 6.5 bps to 2.53%, a 25-year high. Fed held rates as expected but also saw three dissenters opposing the easing bias, pushing US 10Y to 4.42%. The combo\u2014BOJ hawkish pivot + sustained energy shock + 160 breach\u2014triggered acute unwind. Regime upgraded from yellow to red. Stage moved from 1 to 3.",
+    "p2": "The quant anchors confirm the shift. US-JP spread compressed from ~200 bps Tuesday to 189 bps today (US 10Y 4.42% minus JGB 2.53%). USDJPY 1M implied vol spiked from ~7% to ~8.5%, collapsing the carry-to-vol ratio from 27 to 22\u2014still positive but eroding fast. USDJPY's 5-day move is -2.4%, well above MOF's historical pace threshold for verbal intervention. Distance from 60d mean: USDJPY was 159.82 Monday, now 156.57\u2014likely stretched to the downside short-term, but the 60d mean itself has been drifting higher (~155), so we're near fair value post-unwind. The key: pace and volatility, not absolute level. 1-week grade B (Likely) reflects active unwind signatures\u2014sharp FX move, vol spike, three BOJ dissenters, oil $105+. 2-week grade C (Watchful) because the unwind may pause: next BOJ meeting is June, spread is still wide, and MOVE/VIX are not signaling systemic cascade yet. Applied the unwind prior as a tiebreaker for 2w\u2014data is mixed (unwind in FX, but equities/credit still orderly), so lean one notch more alert: would otherwise grade D, upgraded to C. 3-week and 4-week grades C and D respectively, weighted by scenario: if oil retreats and Iran deal progresses, acute risk fades; if oil sustains >$110, we're in Stage 4 forced liquidation.",
+    "p3": "BTC at $76,095 is down only 0.2% despite the FX vol spike and equity selloff in Japan. XRP at ~$1.37-$1.39 range, flat to slightly down. This decoupling is notable: crypto should drain in a classic risk-off unwind, yet BTC has held $75k-$77k for weeks. Two reads: (1) Crypto liquidity is structurally independent of yen carry now\u2014different marginal buyer (US institutions, ETFs). (2) Lag effect\u2014if HY credit widens or equities crack further, BTC follows with a 1-3 day delay. For positioning: treat BTC stability as a yellow flag, not green. If Nikkei breaks below 58k or HY spreads widen >50bps in a week, expect crypto to give back 5-10%. If BTC breaks below $72k, that's confirmation the unwind is broadening beyond FX into levered risk assets. For now, crypto is a bystander, not a participant\u2014but that can flip fast."
+  },
+  "horizon_rationale": {
+    "w1_w2": "Week 1 grade B reflects the active shock: USDJPY unwound 2.4% in 24h, three BOJ dissenters, oil $105+, JGB at 2.53%. Unwind is in progress. Week 2 grade C acknowledges that the initial shock may stabilize\u2014no BOJ meeting until June, MOF may verbally intervene to cap yen strength, and oil could ease if Iran deal progresses. The unwind prior was applied here: data is genuinely ambiguous (FX unwinding, but credit/equities not cascading), so we lean watchful rather than unlikely.",
+    "w2_w3": "Week 2 to 3: if the unwind stabilizes (USDJPY 150-155 range, oil retreats to $95-$100), we remain at C (Watchful). If oil stays >$105 and yen strengthens further toward 150, we escalate to B (Likely) as Stage 4 forced liquidation begins. If Iran ceasefire resolves and oil drops below $90, we de-escalate to D (Unlikely) as the acute trigger dissipates.",
+    "w3_w4": "Week 3 to 4: scenario-weighted. By late May, either (a) policy stabilization occurs\u2014BOJ rhetoric calms markets, MOF intervenes, oil normalizes\u2014and acute unwind risk fades (grade D), or (b) a second shock (BOJ surprise hike, sustained oil >$110, HY credit widening) pushes us into Stage 4-5 (grades B-A). The base case is stabilization, hence D for week 4, but the tail risk is non-trivial."
+  },
+  "watch_list": [
+    "MOF verbal intervention or rate-checks in next 48h (watch for yen to pause rally at 155 or reverse toward 158)",
+    "BOJ June meeting pricing: if market prices >50% hike probability, yen strengthens further and carry unwind accelerates",
+    "Oil: if WTI breaks below $95, acute imported-inflation pressure eases; if sustains >$110, Stage 4 forced liquidation likely",
+    "HY credit spreads: any widening >30bps in a week signals contagion from FX to credit; watch HYG/JNK or CDX HY",
+    "BTC below $72k would confirm unwind broadening to levered crypto; Nikkei below 58k signals equity stress amplifying"
+  ],
+  "sources": [
+    {
+      "title": "Trading Economics - USDJPY",
+      "url": "https://tradingeconomics.com/japan/currency"
+    },
+    {
+      "title": "Trading Economics - Japan 10Y JGB",
+      "url": "https://tradingeconomics.com/japan/government-bond-yield"
+    },
+    {
+      "title": "CNBC - US 10Y Treasury",
+      "url": "https://www.cnbc.com/quotes/US10Y"
+    },
+    {
+      "title": "Trading Economics - US 10Y",
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+    },
+    {
+      "title": "Yahoo Finance - VIX",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/"
+    },
+    {
+      "title": "Yahoo Finance - MOVE Index",
+      "url": "https://finance.yahoo.com/quote/%5EMOVE/"
+    },
+    {
+      "title": "Trading Economics - WTI Crude",
+      "url": "https://tradingeconomics.com/commodity/crude-oil"
+    },
+    {
+      "title": "CoinMarketCap - Bitcoin",
+      "url": "https://coinmarketcap.com/currencies/bitcoin/"
+    },
+    {
+      "title": "BOJ - Monetary Policy April 2026",
+      "url": "https://www.boj.or.jp/en/"
+    },
+    {
+      "title": "Yahoo Finance - BOJ risk scenario",
+      "url": "https://finance.yahoo.com/economy/policy/articles/boj-sees-inflation-moving-around-055247842.html"
+    },
+    {
+      "title": "Trading Economics - Nikkei 225",
+      "url": "https://tradingeconomics.com/japan/stock-market"
+    },
+    {
+      "title": "LiteFinance - XRP Price",
+      "url": "https://www.litefinance.org/blog/analysts-opinions/ripple-price-prediction-forecast/"
+    }
+  ]
+}
