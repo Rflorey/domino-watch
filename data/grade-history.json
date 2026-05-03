@@ -43,5 +43,10 @@
     "date": "2026-05-02",
     "grade_1w": "B",
     "regime": "red"
+  },
+  {
+    "date": "2026-05-03",
+    "grade_1w": "C",
+    "regime": "yellow"
   }
 ]
