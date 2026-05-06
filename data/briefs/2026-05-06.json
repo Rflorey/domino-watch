@@ -1,0 +1,195 @@
+{
+  "date": "2026-05-06",
+  "generated_at": "2026-05-06T09:00:00+00:00",
+  "regime_flag": "yellow",
+  "regime_justification": "USDJPY recovering to 156 after MOF intervention last Thursday; spread still wide at ~187 bps but volatility elevated; oil easing sharply on US-Iran deal progress but BOJ remains behind the curve with only 2 intervention windows left under IMF rules.",
+  "domino_stage": {
+    "stage": 2,
+    "label": "Pre-Intervention",
+    "justification": "MOF intervened May 1 at 160.50; pair now consolidating near 156 after $35B yen-buy; IMF-constrained to 2 more 3-day operations by November; risk reversals and pace still flagging intervention threat zone."
+  },
+  "grades": {
+    "1w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Intervention hangover caps USDJPY but BOJ on hold until H2 2026; oil cratering -13% removes immediate pressure"
+    },
+    "2w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Pair likely to retest 158-160 as carry differential remains wide; MOF has limited ammunition (2 episodes left)"
+    },
+    "3w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "June 15-16 BOJ meeting: interim JGB taper review but no hike expected; spread compression stalled"
+    },
+    "4w": {
+      "grade": "D",
+      "label": "Unlikely",
+      "driver": "If US-Iran deal confirmed and oil stays sub-$95, imported inflation pressure eases; carry unwind risk moderates near-term"
+    }
+  },
+  "bottom_line": "Stage 2 (Pre-Intervention) persists: MOF spent ~$35B last Thursday to knock USDJPY from 160.50 to 156; pair consolidating but carry spread remains 187 bps and BOJ not hiking until H2. Oil plunge to $90 (US-Iran deal progress) removes acute import-inflation pressure, but authorities face IMF constraint\u2014only 2 more 3-day intervention windows by November. Grades hold C/C/C/D: watchful through May-June as intervention deterrent fades and pair likely re-tests 158-160; unwind risk moderates if oil stays low and deal confirmed. Crypto flat\u2014BTC $81.5k awaiting macro catalyst.",
+  "stack": [
+    {
+      "marker": "USD/JPY spot",
+      "level": "156.40",
+      "change_1d": "-0.93%",
+      "note": "Consolidating post-intervention; traded 155-158 range after May 1 spike from 160.50"
+    },
+    {
+      "marker": "US 10Y",
+      "level": "4.38%",
+      "change_1d": "-5 bps",
+      "note": "Easing on oil relief and US-Iran deal optimism"
+    },
+    {
+      "marker": "JGB 10Y",
+      "level": "2.50%",
+      "change_1d": "+0 bps",
+      "note": "Highest since 1997; BOJ on hold (0.75%) but 3 of 9 members dissented for hike at Apr 28 meeting"
+    },
+    {
+      "marker": "US-JP spread",
+      "level": "188 bps",
+      "change_1d": "-5 bps",
+      "note": "Still wide; carry intact despite intervention"
+    },
+    {
+      "marker": "WTI crude",
+      "level": "$89.76",
+      "change_1d": "-12.24%",
+      "note": "Collapsed on US-Iran deal progress; Project Freedom paused"
+    },
+    {
+      "marker": "\u00a5/bbl (computed)",
+      "level": "\u00a514,043",
+      "change_1d": "-13%",
+      "note": "Import cost pressure easing sharply"
+    },
+    {
+      "marker": "VIX",
+      "level": "16.73",
+      "change_1d": "-3.74%",
+      "note": "Risk-on; low teens = complacency"
+    },
+    {
+      "marker": "MOVE index",
+      "level": "76.78",
+      "change_1d": "+10.58%",
+      "note": "Treasury vol still elevated but below danger zone (100+)"
+    },
+    {
+      "marker": "Nikkei 225",
+      "level": "59,513",
+      "change_1d": "+0.38%",
+      "note": "Resilient; intervention relieved pressure but yen strength headwind"
+    },
+    {
+      "marker": "BTC spot",
+      "level": "$81,572",
+      "change_1d": "+0.63%",
+      "note": "Sideways; correlation with risk-on muted"
+    }
+  ],
+  "trigger_map": [
+    {
+      "trigger": "MOF FX intervention",
+      "status": "armed",
+      "note": "Conducted May 1 (~$35B). Only 2 more 3-day windows allowed by IMF rules through Nov. Likely re-arms if USDJPY approaches 160 again."
+    },
+    {
+      "trigger": "BOJ rate hike surprise",
+      "status": "armed",
+      "note": "Next meeting Jun 15-16 (interim JGB taper review). Market prices no hike until H2 2026; but 3/9 board members dissented for hike Apr 28."
+    },
+    {
+      "trigger": "JGB 10Y break above prior cycle high",
+      "status": "cocked",
+      "note": "Already at 2.50%, highest since 1997. Further break toward 2.7% (next resistance) would signal unwind acceleration."
+    },
+    {
+      "trigger": "MOVE index spike above 100",
+      "status": "latent",
+      "note": "Currently 76.8, up 10% today but well below 100 regime-change threshold."
+    },
+    {
+      "trigger": "Energy / Hormuz shock pushing \u00a5/bbl > prior peak",
+      "status": "latent",
+      "note": "Oil cratered -13% today to $90 on US-Iran deal optimism. Shock risk now receding unless deal collapses."
+    },
+    {
+      "trigger": "USDJPY pace accelerating > 2%/week",
+      "status": "armed",
+      "note": "5-day change now -0.93% (post-intervention stabilization). MOF historically reacts to pace not level; watch for re-acceleration."
+    }
+  ],
+  "narrative": {
+    "p1": "USDJPY consolidated near 156.40 today (-0.93%), digesting last Thursday's MOF intervention that pushed the pair from 160.50 to sub-156. Oil collapsed -12% to $90 as US-Iran ceasefire holds and Washington paused Project Freedom, signaling deal progress. US 10Y fell 5 bps to 4.38%; JGB 10Y flat at 2.50% (1997 high). VIX dropped -3.7% to 16.7 (complacency). No stage change\u2014still Stage 2 (Pre-Intervention): authorities showed willingness to act at 160 but face IMF constraint (only 2 more 3-day intervention windows by November per MOF official Monday). BOJ April 28 meeting kept rates at 0.75% (6-3 vote, 3 dissented for hike), raised core CPI forecast to 2.8%, cut growth to 0.5%. Next BOJ meeting June 15-16 (JGB taper interim review), no hike expected until H2 2026.",
+    "p2": "Quant anchors: US-JP spread 188 bps (down 5 today but still wide\u2014carry intact). Carry-to-vol proxy unavailable (USDJPY 1M IV data stale). \u00a5/bbl computed = \u00a514,043 (down 13%\u2014import inflation pressure easing sharply). USDJPY 5-day pace -0.93% (post-intervention consolidation; was +1.7% pre-intervention). Distance from 60d mean: neutral (consolidating in 155-158 range). We remain Stage 2: intervention demonstrated MOF's 160 line, but ammunition limited (IMF rules) and carry differential still incentivizes shorts. Grades C/C/C/D: applied unwind prior at 1w and 2w (would otherwise grade D given oil collapse), because spread remains wide, BOJ behind curve, and intervention effect likely fades within 2 weeks as pair re-tests 158-160. Grade 3w C (Jun BOJ meeting risk, though no hike priced). Grade 4w D (if US-Iran deal confirmed and oil stays sub-$95, acute pressure moderates). Key divergence: oil relief is genuine, but policy divergence (Fed hold vs. BOJ slow normalization) keeps structural carry pressure in place.",
+    "p3": "BTC $81.6k (+0.6%), XRP unavailable. Crypto sideways\u2014whale addresses holding (per search), no flush yet. BTC correlation with DXY and risk-on muted; sitting below late-2025 highs (~$126k) as macro uncertainty (yen carry, Iran war) kept flows cautious. Oil plunge today is risk-on bullish in isolation, but crypto tracking equities more than FX lately. If yen stabilizes 155-158 and S&P continues melt-up (hit fresh highs Monday), BTC likely grinds higher toward $85-90k. Unwind scenario (Stage 4) would see BTC flush to $70-75k as liquidity drains. For now, holding pattern\u2014no catalyst to break either way. Positioning: watch BTC open interest (direction unavailable today) and 30d correlation with DXY for early signal of risk-off rotation."
+  },
+  "horizon_rationale": {
+    "w1_w2": "Intervention deterrent fades as market tests MOF resolve. Pair likely drifts back toward 158-160 as carry spread (188 bps) and BOJ inaction incentivize shorts. Oil relief (now $90) removes acute pressure, but policy divergence persists. MOF constrained (2 windows left). Grade C both weeks\u2014watchful, not imminent unwind but setup fragile.",
+    "w2_w3": "June 15-16 BOJ meeting: interim JGB taper review. No hike expected but risk of hawkish language if inflation stays 2.8%+. If USDJPY re-tests 160 before meeting, MOF may burn another intervention window. Oil trajectory critical\u2014if stays sub-$95, grade holds C; if spikes back above $110 on deal collapse, upgrade to B. Grade 3w C (scenario-weighted: 60% consolidation, 30% slow grind higher, 10% intervention #2).",
+    "w3_w4": "If US-Iran deal confirmed (Washington optimism per search) and oil settles $85-95 range, imported inflation pressure dissipates and yen carry unwind risk moderates near-term. BOJ could delay next hike to Sep-Oct. Spread compression stalls but doesn't reverse. Grade 4w D (unlikely unwind within 4 weeks absent exogenous shock). Caveat: if deal collapses and oil spikes back above $115, all bets off\u2014flip to B."
+  },
+  "watch_list": [
+    "USDJPY retest of 158-160: pace of rebound will determine if MOF intervenes again (only 2 windows left)",
+    "US-Iran deal confirmation: if announced this week, oil likely stays sub-$95 and yen pressure eases structurally",
+    "BOJ June 15-16 meeting rhetoric: watch for hawkish shift if 3+ board members continue to dissent for hike",
+    "MOVE index: currently 76.8, watch for break above 100 (rates vol regime change signal)",
+    "JGB 10Y break above 2.60%: would signal unwind acceleration as carry positions reprice BOJ trajectory"
+  ],
+  "sources": [
+    {
+      "title": "Trading Economics - USDJPY",
+      "url": "https://tradingeconomics.com/japan/currency"
+    },
+    {
+      "title": "Trading Economics - US 10Y Treasury",
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+    },
+    {
+      "title": "Trading Economics - JGB 10Y",
+      "url": "https://tradingeconomics.com/japan/government-bond-yield"
+    },
+    {
+      "title": "Trading Economics - WTI Crude",
+      "url": "https://tradingeconomics.com/commodity/crude-oil"
+    },
+    {
+      "title": "Yahoo Finance - VIX",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/"
+    },
+    {
+      "title": "TradingView - MOVE Index",
+      "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
+    },
+    {
+      "title": "CoinMarketCap - Bitcoin",
+      "url": "https://coinmarketcap.com/currencies/bitcoin/"
+    },
+    {
+      "title": "CNBC - BOJ April 28 Decision",
+      "url": "https://www.cnbc.com/2026/04/28/bank-of-japan-keeps-policy-rate-steady-cpi-iran-war-gdp.html"
+    },
+    {
+      "title": "Bloomberg - Japan MOF Intervention May 1",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-01/japan-likely-spent-34-5-billion-in-fx-intervention-to-boost-yen"
+    },
+    {
+      "title": "Japan Times - IMF Intervention Rules",
+      "url": "https://www.japantimes.co.jp/business/2026/05/05/markets/imf-yen-interventions/"
+    },
+    {
+      "title": "Investing.com - Nikkei 225",
+      "url": "https://www.investing.com/indices/japan-ni225"
+    },
+    {
+      "title": "BOJ Official Calendar",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    }
+  ]
+}
