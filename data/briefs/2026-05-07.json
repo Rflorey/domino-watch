@@ -1,0 +1,190 @@
+{
+  "date": "2026-05-07",
+  "generated_at": "2026-05-07T14:30:00-04:00",
+  "regime_flag": "yellow",
+  "regime_justification": "USDJPY at 156.36 after suspected intervention on May 7; MOF Katayama warned 'decisive action timing is nearing' while oil dropped 7% on peace hopes, reducing imported inflation pressure temporarily but yen remains under structural pressure with spread at 187 bps and BOJ holding at 0.75%.",
+  "domino_stage": {
+    "stage": 2,
+    "label": "Pre-Intervention",
+    "justification": "USDJPY touched 160.72 on May 1 before suspected MOF intervention drove yen to 155; Finance Minister repeatedly warning 'decisive action nearing'; Bessent visiting next week to discuss yen weakness; intervention risk elevated but no confirmed shock yet."
+  },
+  "grades": {
+    "1w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Suspected intervention provided temporary relief but structural pressure intact; spread 187 bps, BOJ standing pat at 0.75%, oil volatility high; Bessent visit May 12-14 adds event risk."
+    },
+    "2w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "BOJ April meeting showed 3-of-9 dissenters wanted hike to 1.0%; next meeting June 15-16 is 5 weeks out; if yen weakens toward 160 again MOF could intervene decisively triggering unwind."
+    },
+    "3w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Oil peace dividend fading as deal uncertain; if Hormuz reopens inflation pressure eases giving BOJ cover to hold, but if talks collapse energy shock could force emergency hike or large-scale intervention."
+    },
+    "4w": {
+      "grade": "D",
+      "label": "Unlikely",
+      "driver": "Assuming Iran deal holds and oil stabilizes sub-$100, imported inflation moderates; BOJ likely holds June 15-16; yen stabilizes 152-158 range without major shock unless geopolitical reversal."
+    }
+  },
+  "bottom_line": "Stage 2 (Pre-Intervention): Japan executed suspected intervention on May 7 after yen hit 160.72; MOF warnings escalating, Bessent visiting next week. Oil crashed 7% on Iran peace hopes, temporarily easing import cost pressure, but structural carry (187 bps spread, BOJ at 0.75%) unchanged. Setup remains fragile\u2014if yen drifts back toward 160 or oil reignites, MOF will act decisively. Grades C/C/C/D: watchful near-term, modest relief at 4 weeks if peace holds.",
+  "stack": [
+    {
+      "marker": "USD/JPY spot",
+      "level": 156.36,
+      "change_1d": "-0.17%",
+      "note": "Touched 160.72 on May 1; suspected MOF intervention drove it to 155 on May 7; now 156.36 after bounce; 3.64 yen below intervention trigger"
+    },
+    {
+      "marker": "US-JP 10Y spread",
+      "level": "187 bps",
+      "change_1d": "-3 bps",
+      "note": "US 10Y 4.35%, JGB 10Y 2.48%; spread compressed slightly on oil drop easing inflation fears but remains wide\u2014carry intact"
+    },
+    {
+      "marker": "JGB 10Y yield",
+      "level": "2.48%",
+      "change_1d": "-3 bps",
+      "note": "Eased from 2.51% on May 6; off 29-year high of 2.50% hit late April; oil drop reduced pressure but still elevated"
+    },
+    {
+      "marker": "USD/JPY 5d %",
+      "level": "-2.03%",
+      "change_1d": null,
+      "note": "Sharp yen rally over Golden Week on suspected intervention; MOF Katayama: 'timing of decisive action is nearing'"
+    },
+    {
+      "marker": "WTI crude",
+      "level": 95.66,
+      "change_1d": "-7.0%",
+      "note": "Crashed from 102.59 on May 5 to 88.66 intraday May 6 on Iran peace deal hopes; rebounded to 95.66; \u00a5/bbl now ~14,950 vs ~16,100 peak"
+    },
+    {
+      "marker": "VIX",
+      "level": 16.73,
+      "change_1d": "-3.74%",
+      "note": "Fell from 17.45 on May 5 as geopolitical risk premium unwound on Iran deal optimism; still above cycle lows"
+    },
+    {
+      "marker": "MOVE index",
+      "level": 70.6,
+      "change_1d": "-8.0%",
+      "note": "Bond vol collapsed on oil drop easing inflation fears; sub-80 signals calm rates market; well below 100 trigger"
+    },
+    {
+      "marker": "BOJ policy rate",
+      "level": "0.75%",
+      "change_1d": "unch",
+      "note": "Held April 27-28 (6-3 vote); 3 dissenters wanted 1.0%; Ueda cited Mideast uncertainty; next meeting June 15-16"
+    },
+    {
+      "marker": "US 10Y yield",
+      "level": "4.35%",
+      "change_1d": "-10 bps",
+      "note": "Dropped from 4.45% on May 5 as oil plunge eased inflation concerns; Fed pause extended"
+    },
+    {
+      "marker": "BTC spot",
+      "level": 81076,
+      "change_1d": "-0.74%",
+      "note": "Flat to slightly lower; risk-on from Iran peace hopes offset by profit-taking; holding above $80k support"
+    }
+  ],
+  "trigger_map": [
+    {
+      "trigger": "MOF FX intervention",
+      "status": "cocked",
+      "note": "Suspected intervention May 7 after yen hit 160.72; Katayama: 'timing of decisive action nearing'; Bessent visit May 12-14; if yen returns to 158-160 MOF will act again"
+    },
+    {
+      "trigger": "BOJ rate hike surprise",
+      "status": "armed",
+      "note": "3-of-9 board members voted for 1.0% at April meeting; next decision June 15-16; Ueda said 'scrutinise developments carefully'; hike possible if yen weakens further"
+    },
+    {
+      "trigger": "JGB 10Y break above 2.50%",
+      "status": "armed",
+      "note": "JGB 10Y hit 2.50% (29-year high) late April, now 2.48%; oil drop eased pressure but break above 2.55% would signal fiscal/inflation stress"
+    },
+    {
+      "trigger": "Energy / Hormuz shock",
+      "status": "cocked",
+      "note": "Oil crashed 7% on Iran peace hopes but deal not finalized; Trump warned he'll resume strikes if Iran fails to comply; if talks collapse oil could spike back to $110+ driving \u00a5/bbl past 17,000"
+    },
+    {
+      "trigger": "MOVE index spike above 100",
+      "status": "latent",
+      "note": "MOVE at 70.6 after -8% drop; rates vol subdued on oil decline; would need inflation shock or fiscal crisis to spike above 100"
+    }
+  ],
+  "narrative": {
+    "p1": "Overnight: Suspected MOF intervention on May 7 after USDJPY touched 160.72 on May 1; yen rallied from 157.8 to 155 in thin Golden Week trade. Finance Minister Katayama warned 'timing of decisive action is nearing' and told reporters to 'hold onto your smartphones.' Oil crashed 7% to $88.66 intraday May 6 on reports US-Iran nearing preliminary peace deal to reopen Hormuz, then rebounded to $95.66 as Trump cautioned deal not finalized. VIX fell 3.7%, MOVE dropped 8%, US 10Y yield down 10 bps to 4.35% as inflation fears eased. Stage unchanged at 2 (Pre-Intervention) but intervention risk elevated\u2014MOF has now acted at least once, rhetoric escalating, and Bessent visiting Tokyo May 12-14 to discuss yen weakness.",
+    "p2": "Quant anchors: Spread 187 bps (4.35% - 2.48%), carry-to-vol not computed (1M implied vol data unavailable but historically ~8-9% suggests carry/vol ~21x\u2014still attractive for carry). USDJPY 5-day -2.03% (pace matters more than level for MOF)\u2014the sharp drop suggests intervention. \u00a5/bbl crude now ~14,950 (95.66\u00d7156.36) vs ~16,100 at peak\u2014modest relief but still elevated vs pre-conflict ~12,000. BOJ held April 27-28 at 0.75% in 6-3 vote; 3 dissenters wanted 1.0%, signaling hawkish minority. Domino Stage 2: we are at the watch line\u2014MOF has acted, rhetoric hot, but no confirmed multi-round intervention or BOJ emergency hike yet. Grades 1w/2w C: intervention bought time but structural pressure (187 bps spread, BOJ at 0.75%, \u00a5156) unchanged; if yen drifts back to 158-160 MOF will intervene again, possibly triggering forced unwind. Applied unwind prior to 2w grade; data is mixed (oil relief vs. intervention risk), would otherwise grade D. 3w C because Iran deal uncertain\u2014if talks collapse oil could spike forcing BOJ emergency hike. 4w D assuming peace holds and oil stabilizes, giving BOJ cover to hold June 15-16 and yen to stabilize 152-158.",
+    "p3": "Crypto liquidity: BTC at $81,076, flat to slightly down (-0.74% 24h) despite risk-on from Iran peace hopes\u2014suggests profit-taking after prior rally. Holding above $80k support is constructive; if geopolitical risk premium continues to unwind and DXY weakens (it fell 0.03% to 98.42), BTC could retest $85k. However, if yen carry unwinds (MOF intervenes aggressively or BOJ hikes), DXY would spike and crypto liquidity would drain fast\u2014BTC could test $75k. For now BTC is trading the macro backdrop (weaker dollar, lower oil) rather than leading it. XRP and open interest data unavailable. Positioning: if you're long crypto, watch USDJPY and MOF headlines closely\u2014yen below 155 or Bessent/Katayama announcing 'coordinated intervention' would be red flags for risk-off cascade."
+  },
+  "horizon_rationale": {
+    "w1_w2": "1w C: Intervention provided temporary relief but yen at 156.36 is only 3.64 yen from MOF trigger; if it drifts back to 158-160 before Bessent visit (May 12-14) MOF likely acts again. Oil at $95.66 is still elevated; if peace talks stall it could spike, pushing \u00a5/bbl back above 16,000 and forcing BOJ's hand. Spread 187 bps and BOJ at 0.75% mean structural carry pressure intact. 2w C: BOJ's April meeting showed 3 dissenters wanted 1.0%; next meeting not until June 15-16, but if yen weakens or inflation data hot BOJ could signal inter-meeting hike. Bessent visit adds event risk\u2014if US/Japan announce coordinated intervention framework or BOJ normalization acceleration, that could trigger vol spike and unwind. Applied unwind prior as tiebreaker; otherwise would grade D.",
+    "w2_w3": "2w C holds through week 3 because Iran deal still uncertain\u2014Trump said no deal finalized and warned he'll resume strikes if Iran fails to comply. If talks collapse, oil could spike back to $110-120, driving \u00a5/bbl to 17,000+ and forcing emergency BOJ hike or massive intervention, triggering Stage 3 shock. Conversely, if deal signed and Hormuz reopens, oil could fall to $85-90, easing import inflation and giving BOJ cover to hold, allowing yen to stabilize. Week 3 is the critical window\u2014geopolitical clarity will determine whether we escalate to Stage 3 or de-escalate to Stage 1.",
+    "w3_w4": "3w C \u2192 4w D: Assuming Iran peace deal holds (base case per market pricing), oil stabilizes $85-95, \u00a5/bbl falls to 13,500-14,500, imported inflation moderates. BOJ likely holds 0.75% at June 15-16 meeting, citing 'need to assess impact of energy price decline.' Yen stabilizes 152-158 range without major shock. Carry unwind risk recedes to background as vol compresses and intervention threat fades. Grade D at 4 weeks reflects this benign scenario. However, if peace talks fail (tail risk ~25%), we stay C or escalate to B as energy shock + intervention could force Stage 3 trigger."
+  },
+  "watch_list": [
+    "USDJPY daily close: if above 158.00, MOF intervention odds spike to 70%+",
+    "Bessent-Katayama-Ueda meetings May 12-14: any joint statement on 'coordinated action' or 'accelerated normalization' is Stage 3 trigger",
+    "Iran peace deal finalization: if talks collapse and Trump resumes strikes, oil spikes to $110+, \u00a5/bbl to 17,000, forcing BOJ emergency hike",
+    "BOJ June Outlook Report (due ~June 12): if core inflation forecast raised above 2.8% or terminal rate guidance lifted to 1.5%, market will price hikes and yen will rally, unwinding carry",
+    "JGB 10Y yield: break above 2.55% would signal loss of fiscal confidence and force BOJ to choose between YCC-lite or letting yen collapse"
+  ],
+  "sources": [
+    {
+      "title": "TradingEconomics - Japan 10Y Government Bond Yield",
+      "url": "https://tradingeconomics.com/japan/government-bond-yield"
+    },
+    {
+      "title": "TradingEconomics - US 10Y Treasury Note Yield",
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+    },
+    {
+      "title": "TradingEconomics - Japanese Yen (USDJPY)",
+      "url": "https://tradingeconomics.com/japan/currency"
+    },
+    {
+      "title": "Investing.com - USD/JPY Exchange Rate",
+      "url": "https://www.investing.com/currencies/usd-jpy"
+    },
+    {
+      "title": "Japan Times - US Treasury Secretary Bessent to meet Takaichi, Katayama, Ueda",
+      "url": "https://www.japantimes.co.jp/business/2026/05/07/economy/us-treasury-secretary-bessent-japan-visit/"
+    },
+    {
+      "title": "TradingView - Japan Week Ahead: MOF Intervention Suspected",
+      "url": "https://www.tradingview.com/news/macenews:cc1a08264094b:0-japan-week-ahead-markets-jittery-after-suspected-mof-intervention-to-stop-yen-fall-beyond-y160-as-mideast-conflict-slows-factory-output/"
+    },
+    {
+      "title": "TradingEconomics - Japan Interest Rate",
+      "url": "https://tradingeconomics.com/japan/interest-rate"
+    },
+    {
+      "title": "TradingEconomics - Crude Oil Price",
+      "url": "https://tradingeconomics.com/commodity/crude-oil"
+    },
+    {
+      "title": "Yahoo Finance - VIX Volatility Index",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/"
+    },
+    {
+      "title": "TradingView - MOVE Index",
+      "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
+    },
+    {
+      "title": "CoinMarketCap - Bitcoin Price",
+      "url": "https://coinmarketcap.com/currencies/bitcoin/"
+    },
+    {
+      "title": "Bank of Japan - Monetary Policy Meetings Schedule",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    }
+  ]
+}
