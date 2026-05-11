@@ -1,0 +1,187 @@
+{
+  "date": "2026-05-11",
+  "generated_at": "2026-05-11T08:00:00-04:00",
+  "regime_flag": "yellow",
+  "regime_justification": "USDJPY consolidating near 157 after suspected MOF interventions; Ueda hawkish pivot keeps June hike in play, but spread remains wide at 187 bps and vol subdued. Bessent in Tokyo next week, BOJ-MOF coordination tighter than usual.",
+  "domino_stage": {
+    "stage": 2,
+    "label": "Pre-Intervention",
+    "justification": "USDJPY at 156.67 (11 pips below MOF's historic 157+ trigger), suspected interventions already occurred May 6-7, Mimura confirms daily contact with US, Bessent visit May 12-14 signals elevated scrutiny."
+  },
+  "grades": {
+    "1w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Bessent in Tokyo May 12-14; Ueda speech Jun 3 ahead of Jun 15-16 meeting keeps June hike firmly priced; USDJPY range-bound post-intervention but spread still 187 bps."
+    },
+    "2w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "BOJ board speeches late May; if June hike signaled, spread compression accelerates; if dovish, carry resumes and MOF forced to intervene again."
+    },
+    "3w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Ueda Jun 3 speech crystallizes June rate decision; market debating 75\u2192100 bps; Iran headlines still volatile, oil spiked to $97 Mon morning post-Trump rejection."
+    },
+    "4w": {
+      "grade": "D",
+      "label": "Unlikely",
+      "driver": "If June hike delivers and oil stabilizes post-Hormuz deal, pressure eases; but if hike disappoints or MOF exhausts reserves, setup fragile into July."
+    }
+  },
+  "bottom_line": "Stage 2: Pre-Intervention tape. MOF already spent ~\u00a510 trillion since Apr 30, USDJPY consolidating 156-157. Ueda's Apr 28 hawkish pivot aligned BOJ-MOF for first time; June 15-16 hike now consensus (75\u2192100 bps debated). Bessent visit May 12-14 critical: US endorsement would multiply intervention bite. Spread still 187 bps, 1M vol low (sub-8%), carry intact but chastened. Grades C/C/C/D reflect elevated risk through Jun meeting, partial relief if hike delivered and oil cools. Watch: Bessent comments, Ueda Jun 3 speech, BOJ board leaks, and Iran-Hormuz developments (oil spiked $97 Mon).",
+  "stack": [
+    {
+      "marker": "USD/JPY spot",
+      "level": "156.67",
+      "change_1d": "-0.02%",
+      "note": "11 pips below 157; suspected intervention May 6-7 stabilized tape"
+    },
+    {
+      "marker": "USD/JPY 5d %",
+      "level": "-0.7%",
+      "change_1d": null,
+      "note": "Pace slowed post-intervention; MOF historically reacts to pace not level"
+    },
+    {
+      "marker": "US-JP 10Y spread",
+      "level": "187 bps",
+      "change_1d": null,
+      "note": "US 10Y ~4.36%, JGB 10Y ~2.49%; spread wide, carry intact"
+    },
+    {
+      "marker": "USD/JPY 1M implied vol",
+      "level": "~7.7%",
+      "change_1d": null,
+      "note": "Vol subdued despite intervention; markets pricing orderly adjustment"
+    },
+    {
+      "marker": "BOJ next meeting",
+      "level": "Jun 15-16",
+      "change_1d": null,
+      "note": "June hike in play; Ueda speech Jun 3; 3 of 9 board dissented Apr for hike"
+    },
+    {
+      "marker": "MOVE index",
+      "level": "67.3",
+      "change_1d": "-6.9%",
+      "note": "Bond vol low; no rate-market stress signal"
+    },
+    {
+      "marker": "VIX",
+      "level": "17.19",
+      "change_1d": "+0.64%",
+      "note": "Equity vol benign; May 8 close, risk-on tone holding"
+    },
+    {
+      "marker": "WTI crude",
+      "level": "$96.90",
+      "change_1d": "+1.6%",
+      "note": "Mon spike post-Trump rejection of Iran deal; Hormuz closed, ~14 Mbpd offline"
+    },
+    {
+      "marker": "BTC spot",
+      "level": "$81,224",
+      "change_1d": "+0.3%",
+      "note": "Opened $82,164 (strongest since Jan 31), consolidating; risk-on but not euphoric"
+    },
+    {
+      "marker": "Nikkei 225",
+      "level": "62,518",
+      "change_1d": "-0.3%",
+      "note": "Intraday hit 63,385 (record), pulled back; yen strength weighing on exporters"
+    }
+  ],
+  "trigger_map": [
+    {
+      "trigger": "MOF FX intervention",
+      "status": "cocked",
+      "note": "Already fired ~\u00a510 trn Apr 30-May 7; USDJPY 156.67, Mimura confirms daily US contact; Bessent visit May 12-14 signals US coordination attempt"
+    },
+    {
+      "trigger": "BOJ rate hike surprise",
+      "status": "cocked",
+      "note": "Jun 15-16 meeting: market debating 75\u2192100 bps; Ueda speech Jun 3; 3 dissented Apr for hike; Himino/Masu/Koeda speaking late May"
+    },
+    {
+      "trigger": "JGB 10Y break above prior cycle high",
+      "status": "armed",
+      "note": "JGB 10Y ~2.49%, highest since 1997; watching 2.5%+ sustained break for unwind acceleration"
+    },
+    {
+      "trigger": "MOVE index spike above 100",
+      "status": "latent",
+      "note": "MOVE 67.3, down 6.9%; no bond-market stress"
+    },
+    {
+      "trigger": "Energy / Hormuz shock pushing \u00a5/bbl > prior peak",
+      "status": "armed",
+      "note": "WTI $96.90 Mon spike; \u00a5/bbl = 15,188 (156.67 \u00d7 96.90); Hormuz closed since Feb, Trump rejected Iran deal Sun; if oil >$100, \u00a5/bbl inflation stress rises"
+    },
+    {
+      "trigger": "USDJPY 1M risk reversals flipping to JPY-call premium",
+      "status": "armed",
+      "note": "Risk reversals data unavailable; vol subdued suggests not yet flipped but watching for shift post-Bessent visit"
+    }
+  ],
+  "narrative": {
+    "p1": "Japan back from Golden Week into a dramatically changed policy landscape. Ueda's Apr 28 hawkish pivot\u2014warning on weak-yen inflation risk\u2014aligned BOJ with MOF for the first time in years. MOF intervened Apr 30 (first in 2 years), then again May 6-7; ~\u00a510 trillion spent. USDJPY now 156.67, down from 158+ highs, consolidating. Mimura (top currency diplomat) confirmed daily US contact Thu; Bessent arrives Tokyo May 12 for 3-day visit. Reuters: 'Tokyo betting Bessent endorsement + BOJ June hike can raise cost of betting against yen.' No stage change from Friday (still Stage 2 Pre-Intervention) but trigger density rising. WTI spiked $97 Mon after Trump called Iran's deal response 'TOTALLY UNACCEPTABLE'; Hormuz still closed. Nikkei hit record 63,385 intraday Mon before fading to 62,518 (-0.3%) as yen strength weighed exporters. BTC opened $82,164 (strongest since Jan 31), now $81,224; risk-on holding but not euphoric.",
+    "p2": "Quant anchors: Spread 187 bps (4.36 US - 2.49 JGB), still wide enough to fund carry but compressed from 200+ Feb. Carry-to-vol proxy: 187/7.7 \u2248 24.3, elevated (lower vol makes carry cheaper but also masks stress). USDJPY 5-day -0.7%, pace slowed post-intervention. Distance from 60d mean: neutral to slightly compressed (intervention pulled it back toward mean). \u00a5/bbl crude: 156.67 \u00d7 96.90 = \u00a515,188/bbl; if WTI sustains >$100, import-cost inflation pressures BOJ to hike faster, paradoxically compressing spread and forcing unwind. Stage 2 (Pre-Intervention) justified: USDJPY at historic MOF watch line (157 historically triggers action), suspected interventions already occurred, rate-checks rumored (Bessent visit = rate-check diplomacy), vol bid modestly (though still low), and basis/risk-reversals likely shifting (data unavailable). Grade C for 1w/2w/3w: Bessent visit this week, then Ueda Jun 3 speech, then Jun 15-16 BOJ meeting. Three consecutive event risks, any of which could tip into Stage 3 (Shock/Trigger) if: (a) Bessent signals US won't tolerate more intervention, (b) Ueda pre-commits to 100 bps hike and market front-runs spread compression, or (c) Iran conflict re-escalates and oil >$110. Grade D for 4w (Unlikely): if June hike delivers and Hormuz deal materializes, pressure eases into July; but if hike disappoints (only 75 or hold) or MOF seen exhausting reserves without US support, setup remains fragile. Applied unwind prior moderately: data genuinely mixed (vol low, spread wide, but policy coordination unprecedented and intervention already fired). Without the prior, might grade 2w as D; with it, holding C given the catalyst density and lack of policy relief so far.",
+    "p3": "BTC $81,224 (+0.3%), opened strongest since Jan 31 at $82,164 then faded slightly. XRP and OI data unavailable. BTC-DXY 30d correlation not retrieved but likely positive recently (both rallied as Iran risk = safe-haven bid for USD and digital gold narrative for BTC). BTC consolidating post-bounce, not euphoric; alt liquidity rotation muted. For crypto positioning: risk-on holding (equities grinding higher, VIX 17, MOVE 67) but carry unwind would drain liquidity fast\u2014BTC historically correlated with Nikkei tech and global M2 proxies. If BOJ hikes June and spreads compress 20-30 bps without drama, BTC likely consolidates or grinds higher on 'policy normalization = soft landing' narrative. If unwind cascades (Stage 4), BTC drops 15-25% in days as levered carry unwinds hit all risk assets. Current read: hold long-term position, don't lever, watch Bessent May 12-14 and Ueda Jun 3 for liquidity regime shift signals."
+  },
+  "horizon_rationale": {
+    "w1_w2": "Week 1 dominated by Bessent visit May 12-14 (does US endorse intervention? does he demand yen stability as tariff trade-off?). Week 2 shifts to BOJ board speeches (Himino, Masu, Koeda late May)\u2014any hint they back June hike emboldens yen bulls and compresses spread. If Bessent supportive and speeches hawkish, grades hold C but unwind risk contained. If Bessent signals US tired of intervention or speeches dovish, USDJPY rips back to 160 and MOF forced to intervene again without US cover\u2014pushes to Stage 3 (Shock).",
+    "w2_w3": "Week 2 BOJ speeches set June hike expectations; Week 3 culminates in Ueda Jun 3 speech (6 days before decision). Market will front-run if Ueda pre-commits to 100 bps hike. If he does, spread compresses 10-20 bps in days, carry unwinds orderly, grade improves to D. If he hedges or signals 'data-dependent' (code for hold/75 only), disappointment drives USDJPY back to 159-160, grade worsens to B as Stage 3 trigger (surprise hike needed later or bigger intervention). Oil wildcard: if Hormuz deal fails and WTI >$105 by late May, BOJ forced to hike regardless, unwind risk jumps to B.",
+    "w3_w4": "Week 3 ends with Ueda speech and front-running into Jun 15-16 meeting; Week 4 is the meeting itself and immediate aftermath. If June hike delivers (75 or 100) and Hormuz deal announced (oil <$90), spread compresses, yen rallies orderly, unwind risk drops to D\u2014carry wounded but not forced liquidation. If meeting disappoints (hold or dovish language despite hike) or oil still >$100, setup fragile into July: MOF reserves questioned, next intervention less credible, USDJPY could spike 162-165 forcing emergency inter-meeting hike (Stage 3). Scenario-weighted: 60% orderly hike \u2192 D, 30% disappointment/oil spike \u2192 C, 10% emergency \u2192 B. Weighted grade D for 4w."
+  },
+  "watch_list": [
+    "Bessent comments May 12-14 Tokyo: any explicit endorsement of intervention or demand for yen stability",
+    "BOJ board speeches late May (Himino, Masu, Koeda): hint on June vote",
+    "Ueda speech Jun 3: does he pre-commit to hike size (75 vs 100 bps) or leave optionality",
+    "Iran-Hormuz developments: Trump rejected deal Sun; if oil sustains >$100, BOJ hike pressure intensifies",
+    "USDJPY daily closes: break above 158 = MOF credibility test; break below 155 = unwind accelerating"
+  ],
+  "sources": [
+    {
+      "title": "Reuters: Japan bets on Washington, BOJ for extra punch in yen battle",
+      "url": "https://finance.yahoo.com/news/analysis-japan-bets-washington-boj-064934153.html"
+    },
+    {
+      "title": "Trading Economics: Japan Interest Rate (BOJ held 0.75% April, June meeting Jun 15-16)",
+      "url": "https://tradingeconomics.com/japan/interest-rate"
+    },
+    {
+      "title": "Trading Economics: Japanese Yen (USDJPY near 157, intervention fears)",
+      "url": "https://tradingeconomics.com/japan/currency"
+    },
+    {
+      "title": "Trading Economics: Japan 10Y JGB yield (~2.49%, highest since 1997)",
+      "url": "https://tradingeconomics.com/japan/government-bond-yield"
+    },
+    {
+      "title": "CNBC: US 10Y Treasury yield (4.36%)",
+      "url": "https://www.cnbc.com/quotes/US10Y"
+    },
+    {
+      "title": "Yahoo Finance: VIX (17.19, +0.64%)",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/"
+    },
+    {
+      "title": "TradingView: MOVE index (67.3, bond vol subdued)",
+      "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
+    },
+    {
+      "title": "Trading Economics: WTI Crude ($96.90, Iran tensions)",
+      "url": "https://tradingeconomics.com/commodity/crude-oil"
+    },
+    {
+      "title": "Fortune: Bitcoin price May 11, 2026 ($81,224)",
+      "url": "https://fortune.com/article/price-of-bitcoin-05-11-2026/"
+    },
+    {
+      "title": "CNBC: Asia markets today (Nikkei hit 63,385 intraday, closed 62,518)",
+      "url": "https://www.cnbc.com/2026/05/11/asia-markets-today-live-updates-nikkei-kospi-hang-seng-sensex-csi-300-iran-hormuz.html"
+    }
+  ]
+}
