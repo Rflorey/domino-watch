@@ -1,0 +1,187 @@
+{
+  "date": "2026-05-13",
+  "generated_at": "2026-05-13T09:30:00-04:00",
+  "regime_flag": "yellow",
+  "regime_justification": "USDJPY back at 157 despite \u00a510 trillion MOF intervention since late April; BOJ Summary of Opinions confirmed hawkish pivot but June meeting 4 weeks away; JGB 10Y at 2.59% (highest since 1997); intervention threat elevated but carry spread intact at 187 bps and vol subdued (1M implied ~7\u20138% unavailable but inferred low from context).",
+  "domino_stage": {
+    "stage": 2,
+    "label": "Pre-Intervention",
+    "justification": "MOF already intervening (\u00a510tn since April 30), USDJPY at watch line near 157, BOJ shifted hawkish with 77% June hike priced, JGB 10Y at 28-year high, risk reversals and basis data unavailable but intervention active and ineffective define stage 2."
+  },
+  "grades": {
+    "1w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "BOJ June 15\u201316 meeting 5 weeks out; Ueda speech June 3; USDJPY at 157 post-intervention; JGB spike and three-dissent April meeting show pressure but no imminent catalyst."
+    },
+    "2w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Applied unwind prior; would otherwise grade D. Ueda speech June 3 inside window, market 77% pricing June hike, but data ambiguous\u2014carry spread 187 bps still wide, vol low, intervention failing to stick."
+    },
+    "3w": {
+      "grade": "B",
+      "label": "Likely",
+      "driver": "June 15\u201316 BOJ meeting lands in week 3; if board hikes to 1.0% (three members already pushed for it in April), spread compression and unwind signatures likely emerge pre-meeting."
+    },
+    "4w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Post-meeting reaction window; if BOJ hikes, initial unwind may stabilize by week 4; if BOJ holds, intervention fatigue and rising oil (WTI $102) keep pressure on but reset clock."
+    }
+  },
+  "bottom_line": "Japan escalated to \u00a510 trillion intervention and BOJ shifted hawkish (77% June hike priced), yet USDJPY climbed back to 157 and JGB 10Y hit 2.59%\u2014highest in 28 years. The carry trade is under policy assault but not yet breaking; June 15\u201316 meeting is the next binary event. Stage 2 (pre-intervention) with yellow regime\u2014authorities committed but market testing resolve.",
+  "stack": [
+    {
+      "marker": "USD/JPY spot",
+      "level": "156.93",
+      "change_1d": "+0.02%",
+      "note": "Back at 157 after MOF intervention; 5d range 155.76\u2013157.74; MOF spent ~\u00a510tn since April 30"
+    },
+    {
+      "marker": "JGB 10Y yield",
+      "level": "2.59%",
+      "change_1d": "+0.9 bps",
+      "note": "Highest since 1997; BOJ April Summary shows members open to near-term hike"
+    },
+    {
+      "marker": "US 10Y yield",
+      "level": "4.46%",
+      "change_1d": "+4 bps",
+      "note": "CPI 3.8% (highest since May 2023) pushed yields higher; Fed hike odds 25% by Dec"
+    },
+    {
+      "marker": "US-JP 10Y spread",
+      "level": "187 bps",
+      "change_1d": "+3 bps",
+      "note": "Carry spread still wide; computed 4.46% - 2.59% = 187 bps"
+    },
+    {
+      "marker": "BOJ June meeting",
+      "level": "Jun 15-16",
+      "change_1d": "77% hike priced",
+      "note": "Market pricing 77% chance of hike to 1.0%; three board members dissented in April pushing for hike; Ueda speech June 3"
+    },
+    {
+      "marker": "MOVE index",
+      "level": "72",
+      "change_1d": "~flat",
+      "note": "Rates vol subdued; well below 100 threshold despite JGB surge"
+    },
+    {
+      "marker": "VIX",
+      "level": "18.0",
+      "change_1d": "-0.4%",
+      "note": "Equity vol low; S&P at records despite Iran war and hot CPI"
+    },
+    {
+      "marker": "WTI crude",
+      "level": "$101.87",
+      "change_1d": "+3.9%",
+      "note": "Trump rejected Iran proposal, ceasefire on 'life support'; \u00a5/bbl = 16,018 yen (imported inflation pressure)"
+    },
+    {
+      "marker": "BTC spot",
+      "level": "$80,304",
+      "change_1d": "-0.7%",
+      "note": "Range-bound $80\u201382k; hot CPI capped breakout; ETF inflows $358M last week"
+    },
+    {
+      "marker": "Nikkei 225",
+      "level": "62,930",
+      "change_1d": "+0.3%",
+      "note": "Holding near highs despite JGB spike; intervention and hike risk not denting equity bid yet"
+    }
+  ],
+  "trigger_map": [
+    {
+      "trigger": "MOF FX intervention",
+      "status": "firing",
+      "note": "\u00a510 trillion spent since April 30; USDJPY back at 157 shows ineffective; Mimura said 'daily contact with US,' no IMF limit on frequency"
+    },
+    {
+      "trigger": "BOJ rate hike surprise",
+      "status": "cocked",
+      "note": "June 15\u201316 meeting; 77% market probability of hike to 1.0%; three dissenters in April; Ueda speech June 3 key signal"
+    },
+    {
+      "trigger": "JGB 10Y break above prior cycle high",
+      "status": "firing",
+      "note": "2.59% is highest since 1997; broke above prior cycle cleanly; BOJ minutes show policy response likely"
+    },
+    {
+      "trigger": "MOVE index spike above 100",
+      "status": "latent",
+      "note": "MOVE at 72, well below threshold; rates vol subdued despite JGB surge"
+    },
+    {
+      "trigger": "Energy / Hormuz shock pushing \u00a5/bbl > prior peak",
+      "status": "armed",
+      "note": "WTI $102, \u00a5/bbl 16,018; Trump rejected Iran proposal, ceasefire 'on life support'; Aramco CEO warns months to normalize"
+    },
+    {
+      "trigger": "USDJPY 1M risk reversals flipping to JPY-call premium",
+      "status": "armed",
+      "note": "Data unavailable but inferred armed given intervention active and June hike 77% priced; vol still low suggests not yet flipped"
+    }
+  ],
+  "narrative": {
+    "p1": "Overnight: USDJPY climbed back to 156.93 (up 0.02%) despite MOF burning through an estimated \u00a510 trillion in yen-buying intervention since April 30. JGB 10Y hit 2.59%, the highest since 1997, after the BOJ's April Summary of Opinions (released May 12) confirmed policymakers are open to hiking 'as early as the next meeting.' Three board members\u2014Nakagawa, Takata, Tamura\u2014dissented in April, calling for an immediate hike to 1.0%. Markets now price a 77% probability of a June 15\u201316 hike. US CPI printed 3.8% (highest since May 2023), pushing US 10Y to 4.46% and dimming Fed cut hopes; 25% chance of a hike by December. WTI jumped 3.9% to $102 after Trump said the Iran ceasefire is on 'life support.' Stage remains 2 (pre-intervention, though intervention is already firing); no change from yesterday's yellow regime\u2014intervention active but ineffective, BOJ rhetoric shifted but meeting 4 weeks away.",
+    "p2": "Quant anchors: US-JP spread 187 bps (4.46% - 2.59%), still wide but compressing as JGB surges. USDJPY 5d pace +1.3% (157.74 high on May 12 vs. 155.76 low May 6); MOF historically reacts to pace, and this qualifies, yet yen continues to weaken post-intervention. Carry-to-vol proxy unavailable (1M implied vol data not retrieved), but context suggests vol remains subdued (VIX 18, MOVE 72). USDJPY is 0.18 yen (18 pips) below the prior intervention peak of 160 but well above the 155.76 post-intervention low\u2014intervention failed to reset the trend. \u00a5/bbl crude at 16,018 yen (WTI $102 \u00d7 156.93) is pushing imported inflation higher, giving BOJ cover to hike. We are in stage 2: intervention firing but ineffective, BOJ rhetoric shifted hawkish, June hike 77% priced, JGB at 28-year high. Grades: 1w C (no imminent catalyst, June meeting 5 weeks out), 2w C (applied unwind prior\u2014would otherwise grade D; Ueda speech June 3 inside window but data ambiguous, spread still wide, vol low, intervention failing), 3w B (June meeting lands in week 3, hike likely triggers early unwind signatures), 4w C (post-meeting stabilization or reset depending on outcome). The setup is fragile but the trigger is scheduled, not imminent.",
+    "p3": "Crypto: BTC at $80,304, down 0.7%, holding the $80\u201382k range. Hot CPI capped the breakout attempt but whale accumulation continues (16,622 BTC added in May per reports). ETF inflows totaled $358M last week, with BlackRock's IBIT recording $269M in a single session\u2014strongest in five weeks. Open interest at 105,195 BTC ($8.52B), up 4.44%, with positive funding, indicating leveraged longs still in the game. BTC is trading tight with DXY correlation muted; the Japan carry unwind thesis suggests BTC liquidity could drain if forced deleveraging hits, but for now BTC is behaving like a high-beta equity\u2014range-bound into the CLARITY Act vote (May 14) and ignoring macro stress. If BOJ hikes in June and yen carry unwinds, BTC likely breaks $80k support and tests $77.5\u201378k liquidity cluster. Until then, it's a hold for long-term allocators; short-term traders should watch $80k as the line in the sand."
+  },
+  "horizon_rationale": {
+    "w1_w2": "Week 1 clean, week 2 edges up to watchful on Ueda speech June 3 (just inside 2w window). Applied unwind prior at 2w\u2014data genuinely ambiguous: intervention firing but failing, spread wide, vol low, yet JGB at 28yr high and June hike 77% priced. Prior tips D\u2192C.",
+    "w2_w3": "Week 3 jumps to B (likely) as June 15\u201316 BOJ meeting lands squarely in the window. If the board hikes (especially to 1.0% as three dissenters demanded), spread compression and early unwind signatures (vol spike, cross-asset decoupling) likely emerge pre-meeting. Even a hold would be hawkish given the setup.",
+    "w3_w4": "Week 4 steps back to C (watchful) as post-meeting reaction plays out. If hike delivered, initial unwind may stabilize by week 4 (capitulation phase or policy response). If BOJ chickens out, intervention fatigue and rising oil keep pressure on but reset the clock\u2014carry wobbles but doesn't break. Non-monotonic path justified by binary event."
+  },
+  "watch_list": [
+    "Ueda speech June 3 (5 days before June meeting; any hawkish signal likely triggers pre-meeting positioning)",
+    "USDJPY daily close above 158 or below 155 (breakout/breakdown from post-intervention range)",
+    "JGB 10Y daily close above 2.65% (next resistance; would signal BOJ losing control of curve)",
+    "Trump-Xi summit outcome this week (May 14\u201315 Beijing; Iran ceasefire extension or collapse shifts oil/inflation path)",
+    "US PPI May 14 (if hot like CPI, Fed hike odds rise further, widening US-JP spread and pressuring yen)"
+  ],
+  "sources": [
+    {
+      "title": "USD/JPY Analysis - Babypips (May 13, 2026)",
+      "url": "https://www.babypips.com/trading/premium-strategy-2026-05-13-usdjpy"
+    },
+    {
+      "title": "Japanese Yen - TradingEconomics (May 13, 2026)",
+      "url": "https://tradingeconomics.com/japan/currency"
+    },
+    {
+      "title": "Japan bets on Washington, BOJ for extra punch in yen battle - Reuters via Yahoo (May 8, 2026)",
+      "url": "https://finance.yahoo.com/news/analysis-japan-bets-washington-boj-064934153.html"
+    },
+    {
+      "title": "Japan 10-Year Government Bond Yield - TradingEconomics (May 13, 2026)",
+      "url": "https://tradingeconomics.com/japan/government-bond-yield"
+    },
+    {
+      "title": "US 10-Year Treasury Yield - CNBC (May 12, 2026)",
+      "url": "https://www.cnbc.com/2026/05/12/treasury-yields-rise-as-investors-await-key-inflation-data.html"
+    },
+    {
+      "title": "BOJ Summary of Opinions - InvestingLive (May 12, 2026)",
+      "url": "https://investinglive.com/news/economic-and-event-calendar-asia-tuesday-may-12-2026-boj-will-give-us-their-thoughts-20260511/"
+    },
+    {
+      "title": "WTI Crude Oil - TradingEconomics (May 13, 2026)",
+      "url": "https://tradingeconomics.com/commodity/crude-oil"
+    },
+    {
+      "title": "Bitcoin Price - Fortune (May 13, 2026)",
+      "url": "https://fortune.com/article/price-of-bitcoin-05-13-2026/"
+    },
+    {
+      "title": "Nikkei 225 - CNBC Asia Markets (May 12, 2026)",
+      "url": "https://www.cnbc.com/2026/05/12/asia-markets-today-live-updates-kospi-hang-seng-index-nikkei-225-sensex-csi-300.html"
+    },
+    {
+      "title": "US Dollar Index (DXY) - TradingView",
+      "url": "https://www.tradingview.com/symbols/TVC-DXY/"
+    }
+  ]
+}
