@@ -1,0 +1,195 @@
+{
+  "date": "2026-05-18",
+  "generated_at": "2026-05-18T19:30:00-04:00",
+  "regime_flag": "yellow",
+  "regime_justification": "USDJPY 158.90, 0.93 yen below 160 intervention threshold; JGB 10Y spiked to 2.80% (29-year high); BOJ held in April split 6-3, hawkish dissents; MOF intervened late April/early May (~$65B total); carry spread intact at 183 bps but vol suppressed at 7-8%; mixed signals.",
+  "domino_stage": {
+    "stage": 2,
+    "label": "Pre-Intervention",
+    "justification": "USDJPY at 158.90 is 110 pips from 160 MOF watch line; two rounds of intervention in late April/early May; JGB 10Y at 2.80% (near 30-year high); rate-check rumors confirmed by action; vol bid but still contained; risk reversals data unavailable but MOF active."
+  },
+  "grades": {
+    "1w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "USDJPY grinding toward 160 again; JGB 10Y at 2.80% stressing funding; BOJ June 15-16 meeting in 4 weeks; Iran war keeping WTI >$103; intervention budget constraints (IMF 3-episode rule; 2 of 3 used)"
+    },
+    "2w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Carry spread 183 bps still wide but JGB bleed continues; USDJPY momentum +0.69% over 5d; MOF has 1 intervention window left under IMF rules; oil elevated; equities vulnerable"
+    },
+    "3w": {
+      "grade": "B",
+      "label": "Likely",
+      "driver": "BOJ June meeting (15-16) inside window; 3 dissenting votes in April signal possible hike; if no hike, intervention fatigue + spread compression risk cascade; carry-to-vol proxy deteriorating"
+    },
+    "4w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Post-BOJ resolution: hike scenario eases pressure temporarily; no-hike scenario elevates to B but outside 4w window; Iran conflict path-dependent; fiscal concerns mount"
+    }
+  },
+  "bottom_line": "Stage-2 setup: USDJPY at 158.90 (110 pips from red line), JGB 10Y at 2.80% (highest since Oct 1996), BOJ June 15-16 meeting is the next binary event. MOF burned 2 of 3 allowed intervention episodes (late April/early May, ~$65B). Carry spread 183 bps still wide, but JGB bleed + Iran war (WTI $103) + US 10Y 4.63% = imported inflation + fiscal stress. Three dissenting votes in April BOJ (calling for 1.0%) mean June hike is live. If they hold, third intervention episode likely triggers before mid-July, exhausting IMF budget and risking cascade. VIX 18.4, MOVE data not retrieved but likely elevated given JGB move. BTC $77k range-bound; crypto liquidity sympathy muted. Grade: C/C/B/C. The 3-week B reflects BOJ meeting risk; unwind prior applied as tiebreaker (would otherwise be C across all horizons given current stability, but setup is fragile and catalysts cluster in June).",
+  "stack": [
+    {
+      "marker": "USD/JPY spot",
+      "level": "158.90",
+      "change_1d": "+0.11%",
+      "note": "110 pips below 160 MOF intervention line; 5d +0.69%; sixth session of decline into intervention, now drifting back"
+    },
+    {
+      "marker": "JGB 10Y",
+      "level": "2.80%",
+      "change_1d": "+9 bps",
+      "note": "Highest since Oct 1996 (~29 yr high); bear steepening; fiscal stress + Iran war inflation + BOJ taper; 30Y >4.2%"
+    },
+    {
+      "marker": "US 10Y",
+      "level": "4.63%",
+      "change_1d": "+10 bps (approx)",
+      "note": "Year high; Iran war inflation spike (CPI/PPI hot); Fed hike expectations rising; pressure on Japan carry"
+    },
+    {
+      "marker": "US-JP 10Y spread",
+      "level": "183 bps",
+      "change_1d": "~+1 bp (computed)",
+      "note": "Spread = 4.63% - 2.80% = 183 bps; still wide but compressing as JGB bleeds faster than UST"
+    },
+    {
+      "marker": "USD/JPY 1M impl vol",
+      "level": "~7.7%",
+      "change_1d": "n/a",
+      "note": "Subdued despite event risk; last available data 7.72 (April); post-intervention vol likely higher but no fresh quote"
+    },
+    {
+      "marker": "WTI crude",
+      "level": "$103.45",
+      "change_1d": "-1.87% (intraday)",
+      "note": "Iran media report US proposed sanctions waiver; earlier session $108; 5d +18.3%; Hormuz closed; \u00a5/bbl = 16,433"
+    },
+    {
+      "marker": "VIX",
+      "level": "18.43",
+      "change_1d": "+1.17 (+6.78%)",
+      "note": "Equity selloff Friday (S&P -1.24%); tech profit-taking; Iran tensions; still below stress threshold but rising"
+    },
+    {
+      "marker": "BTC spot",
+      "level": "$77,319",
+      "change_1d": "-1.37%",
+      "note": "Range 76.7k-78.5k; 5d -3.4%; risk-off tone but contained; open interest/correlation data not retrieved"
+    },
+    {
+      "marker": "Nikkei 225",
+      "level": "60,520 (Mon close)",
+      "change_1d": "-1.45% (Mon); -2.67% Fri",
+      "note": "JGB spike + global tech selloff; semiconductors leading losses; banks resilient; valuation stress from rising yields"
+    },
+    {
+      "marker": "BOJ next meeting",
+      "level": "June 15-16",
+      "change_1d": "n/a",
+      "note": "4 weeks out; April held 6-3 (3 dissents for 1.0%); Summary of Opinions: pressure to hike 'soon' if no economic shock"
+    }
+  ],
+  "trigger_map": [
+    {
+      "trigger": "MOF FX intervention",
+      "status": "cocked",
+      "note": "2 of 3 IMF-allowed episodes used (late Apr/early May, ~$65B); 1 window left by Nov; USDJPY 110 pips from 160; rate-checks active"
+    },
+    {
+      "trigger": "BOJ rate hike surprise",
+      "status": "armed",
+      "note": "June 15-16 meeting; April 6-3 vote, 3 dissents for 1.0%; inflation 2.8% FY26 (raised from 1.9%); Masu: 'raise ASAP'; armed, not cocked (no consensus yet)"
+    },
+    {
+      "trigger": "JGB 10Y break above prior cycle high",
+      "status": "firing",
+      "note": "2.80% today is highest since Oct 1996; 30Y >4.2% (all-time high Fri); bear steepening underway; fiscal risk premium rising; actively unwinding"
+    },
+    {
+      "trigger": "Energy/Hormuz shock",
+      "status": "armed",
+      "note": "WTI $103, Hormuz closed since conflict began; \u00a5/bbl 16,433; Iran/US talks reported but fragile; Trump: 'clock ticking'; upside risk >$110"
+    },
+    {
+      "trigger": "USDJPY 1M risk reversals flip JPY-call",
+      "status": "latent",
+      "note": "Data unavailable; post-intervention likely skewed JPY-call but no fresh quote; historically flips at Stage 2/3 boundary"
+    },
+    {
+      "trigger": "Cross-currency basis blow-out",
+      "status": "latent",
+      "note": "No fresh data on 3M FX swap basis; not flagged in headlines; monitor if USDJPY breaks 160 again"
+    }
+  ],
+  "narrative": {
+    "p1": "USDJPY rose 0.11% to 158.90 on May 18, continuing its grind back toward the 160 intervention threshold after MOF's late-April/early-May operations (two episodes, ~$65B total, exhausting 2 of 3 IMF-allowed windows). Overnight, JGB 10Y spiked +9 bps to 2.80%, the highest since October 1996, as bear steepening intensified on fiscal stress, Iran war inflation (Japan PPI +4.9% in April), and BOJ bond-purchase tapering. US 10Y climbed to 4.63% (year high) on hot CPI/PPI data and rising Fed hike expectations, compressing the carry spread to 183 bps but keeping it wide. WTI crude pulled back to $103 intraday on Iranian media reports of a US sanctions-waiver proposal, but remains elevated (+18% over 5 days) with Hormuz closed. Nikkei 225 fell 1.45% Monday (semiconductors leading losses) after a 2.67% drop Friday as rising JGB yields stressed equity valuations. VIX jumped 6.8% to 18.4 on Friday's equity selloff. BTC rangebound at $77k, down 1.4% on risk-off tone. No stage change from yesterday's yellow/Stage-2, but fragility is building: USDJPY is 110 pips from the MOF red line, JGB 10Y is at a 29-year high, and BOJ's June 15-16 meeting (4 weeks out) is the next binary catalyst after April's split 6-3 vote (three dissents calling for 1.0%).",
+    "p2": "Quant anchors: US-JP 10Y spread = 183 bps (4.63 - 2.80), down ~1 bp as JGB bleeds faster than UST. USDJPY 5-day pace +0.69% (below MOF's historical 2%+ reaction threshold but accelerating). Carry-to-vol proxy: 183 bps / 7.7% \u2248 23.8 (deteriorating; vol data stale). \u00a5/bbl crude = 158.90 \u00d7 103.45 = 16,433 yen, up sharply from pre-war levels, pressuring imported inflation. USDJPY distance from 60d mean: qualitatively stretched (near prior intervention zone). Domino Stage 2 (Pre-Intervention) justified: USDJPY at watch line, rate-checks confirmed by action, vol bid (though data unavailable), JGB at cycle high, MOF has 1 window left under IMF rules. Grades 1-2w: C (Watchful). Setup is fragile\u2014carry spread intact but JGB bleeding, intervention budget constrained, BOJ meeting in 4 weeks\u2014but no imminent catalyst unless USDJPY breaks 160 this week. Grade 3w: B (Likely). Applied unwind prior as tiebreaker; would otherwise grade C. BOJ June meeting sits inside 3-week window; April's 3 dissenting votes and 'raise rates ASAP' commentary (Masu) make a hike plausible. If BOJ holds, MOF exhausts final intervention window and risks cascade (HY widening, equity vol spike, forced carry unwind). If BOJ hikes 25 bps, pressure eases temporarily but doesn't resolve fiscal/JGB stress. Grade 4w: C. Post-BOJ resolution likely shifts regime; hike scenario reduces near-term unwind risk, no-hike elevates but resolution is outside 4-week horizon. FX risk reversals data unavailable (noted miss); likely skewed JPY-call post-intervention but no confirmation.",
+    "p3": "BTC at $77,319, down 1.4% on the day and 3.4% over 5 days, is range-bound in 76.7k-78.5k. Crypto liquidity sympathy to the carry unwind thesis remains muted; BTC correlates loosely with DXY and risk-on/off flows but isn't front-running yen stress. Open interest direction and BTC-DXY 30d correlation data not retrieved (noted miss). The lack of decisive breakdown below 76k suggests crypto positioning is waiting for a clearer macro catalyst\u2014likely the BOJ June meeting or a third MOF intervention episode. If Stage 3 triggers (USDJPY breaks 160, MOF intervenes again, or BOJ surprises hawkish), expect BTC to test 74k-75k support as leveraged macro portfolios deleverage. Conversely, if BOJ hikes and eases near-term unwind risk, BTC could reclaim 80k on renewed risk appetite. For now, crypto is a lagging indicator, not a leading one. XRP at $1.41 (data from search), down modestly; no standout signal. Positioning takeaway: crypto holders should monitor the June 15-16 BOJ meeting as the next binary event; a no-hike outcome would elevate cascade risk and pressure digital assets alongside equities and HY credit."
+  },
+  "horizon_rationale": {
+    "w1_w2": "1-2 week grades both C (Watchful). USDJPY is 110 pips from 160 but momentum is only +0.69% over 5 days\u2014below the ~2%+ pace that historically triggers immediate MOF action. JGB 10Y at 2.80% is a 29-year high and stressing equity valuations, but no equity cascade yet (VIX 18.4, still below 20 stress threshold). MOF has 1 intervention window left under IMF rules; burning it now (absent a break above 160) would exhaust the budget with BOJ meeting still 4 weeks out. Grades reflect meaningful stress building but no imminent catalyst unless USDJPY accelerates or exogenous shock (Iran escalation, Trump policy surprise). Watch for: USDJPY daily closes above 159.50, VIX break above 20, HY spread widening >10 bps in a session.",
+    "w2_w3": "Grade lifts from C to B at the 3-week horizon because BOJ June 15-16 meeting sits inside that window. April's 6-3 vote (3 dissents for 1.0%) and BOJ member commentary ('raise rates ASAP if no clear economic slowdown') make a 25 bps hike to 1.0% plausible. Market is roughly 50-50 (per options data in searches). If BOJ hikes, near-term unwind risk eases (though JGB/fiscal stress persists). If BOJ holds, MOF likely exhausts final intervention window within days, triggering Stage 3. Spread compression + vol spike + equity decoupling would follow. Applied unwind prior as tiebreaker here: data is genuinely ambiguous (BOJ could go either way), but the setup is fragile and the catalyst is binary. Without the prior, would grade C/C (watchful but not likely).",
+    "w3_w4": "Grade steps back to C at 4-week horizon because the BOJ meeting resolution (June 15-16) likely shifts the regime by week 4. Hike scenario: pressure eases temporarily, USDJPY consolidates 155-158, JGB stabilizes, unwind risk recedes into Q3. No-hike scenario: Stage 3 trigger (intervention + cascade) occurs in week 3, followed by capitulation/stabilization attempt in week 4 (Stage 5 entry). Either path reduces probability of active unwind at the 4-week mark relative to week 3. Non-monotonic grade path (C/C/B/C) reflects clustering of catalysts in the 3-week window and resolution beyond it. Key uncertainty: Iran conflict path (if escalates, oil >$110, yen pressure intensifies regardless of BOJ action)."
+  },
+  "watch_list": [
+    "USDJPY daily closes: break above 159.50 would signal MOF red-line test imminent; sustained above 160 = intervention likely within 24-48 hours",
+    "JGB 10Y: further break above 2.85% would stress fiscal sustainability narrative; watch 30Y for 4.5% (all-time high extension)",
+    "BOJ June meeting leaks/Ueda comments (May 19-June 14): any hawkish tilt (e.g., 'data support normalization') would ease 3w B grade; dovish hold confirms it",
+    "Iran conflict: Trump-Iran talks via Pakistan; any breakdown or Hormuz re-escalation pushes WTI >$110, compounds yen pressure via \u00a5/bbl channel",
+    "VIX/MOVE: VIX sustained >20 or MOVE >100 (data not retrieved but likely elevated) = cross-asset stress threshold; HY spread widening >50 bps/week = contagion signal"
+  ],
+  "sources": [
+    {
+      "title": "TradingEconomics - USD/JPY Exchange Rate",
+      "url": "https://tradingeconomics.com/japan/currency"
+    },
+    {
+      "title": "TradingEconomics - Japan 10Y Government Bond Yield",
+      "url": "https://tradingeconomics.com/japan/government-bond-yield"
+    },
+    {
+      "title": "TradingEconomics - US 10Y Treasury Note Yield",
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+    },
+    {
+      "title": "TradingEconomics - WTI Crude Oil Price",
+      "url": "https://tradingeconomics.com/commodity/crude-oil"
+    },
+    {
+      "title": "Yahoo Finance - VIX Index",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/"
+    },
+    {
+      "title": "CoinMarketCap - Bitcoin Price",
+      "url": "https://coinmarketcap.com/currencies/bitcoin/"
+    },
+    {
+      "title": "Bank of Japan - Monetary Policy Meetings Schedule",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "title": "Japan Times - Yen Intervention April/May 2026",
+      "url": "https://www.japantimes.co.jp/business/2026/05/01/economy/yen-intervention-surge/"
+    },
+    {
+      "title": "Bloomberg - Japan IMF Intervention Rules",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-05/japan-has-two-more-key-windows-for-yen-intervention-by-imf-rules"
+    },
+    {
+      "title": "CNBC - Asia Markets & Nikkei 225",
+      "url": "https://www.cnbc.com/2026/05/18/asia-pacific-markets-today-live-updates-nikkei-225-hang-seng-index-kospi-nifty-50.html"
+    },
+    {
+      "title": "TradingKey - JGB 10Y Hits 30-Year High",
+      "url": "https://www.tradingkey.com/analysis/economic/more/261905242-jpy-japan-treasury-bond-yield-us-tradingkey"
+    },
+    {
+      "title": "TradingEconomics - Japan Interest Rate (BOJ)",
+      "url": "https://tradingeconomics.com/japan/interest-rate"
+    }
+  ]
+}
