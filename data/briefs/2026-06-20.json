@@ -1,0 +1,193 @@
+{
+  "date": "2026-06-20",
+  "generated_at": "2026-06-20T09:00:00-04:00",
+  "regime_flag": "yellow",
+  "regime_justification": "USDJPY back at 161.24 after BOJ hiked to 1.0% on Jun 16; spread still 183 bps but pace slower; MOF verbal warnings continuing, intervention risk elevated despite recent rate hike.",
+  "domino_stage": {
+    "stage": 2,
+    "label": "Pre-Intervention",
+    "justification": "USDJPY tested 161.69 high this week, MOF rate-check rumors persist, BOJ just hiked 25bp but yen giving back gains; at watch line with verbal intervention ongoing."
+  },
+  "grades": {
+    "1w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "USDJPY still at 161 handle post-BOJ hike, MOF tolerance thin, vol subdued at ~11%, but Fed hawkish and US-Iran deal capping oil eases immediate pressure."
+    },
+    "2w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Spread at 183 bps keeps carry attractive despite BOJ normalization; MOVE/VIX both calm but setup fragile if USDJPY tests 162 or oil reverses."
+    },
+    "3w": {
+      "grade": "D",
+      "label": "Unlikely",
+      "driver": "If US-Iran deal holds and oil stays subdued, import-cost pressure eases; BOJ July meeting unlikely to surprise after Jun hike; modest unwind risk recedes."
+    },
+    "4w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "BOJ Aug meeting (7/30-31) looms; market may re-test MOF tolerance or price next hike, keeping tail risk live; scenario-weighted elevated."
+    }
+  },
+  "bottom_line": "Stage 2 (Pre-Intervention): USDJPY at 161.24, just 0.46 yen below 162 watch line. BOJ hiked to 1.0% on Jun 16, dissent from Asada, but pair reversed gains within 48h. US-JP spread 183 bps. MOF verbal warnings persistent (Kihara, Katayama). VIX 16.4, MOVE 67, both calm. WTI $76.51 (-21% monthly) eases \u00a5/bbl pressure. BTC $63,676 (neutral). Grades: C/C/D/C. Applied unwind prior to 1w (would otherwise grade D given calm vol); 4w elevated on BOJ Aug meeting catalyst. Watch USDJPY break of 162, oil reversal, or Himino/Ueda hawkish follow-through.",
+  "stack": [
+    {
+      "marker": "USD/JPY spot",
+      "level": "161.24",
+      "change_1d": "+0.10%",
+      "note": "Jun 19 close; tested 161.69 intraweek, 0.46 yen from 162 watch line; BOJ hike failed to hold yen gains"
+    },
+    {
+      "marker": "USD/JPY 1M implied vol",
+      "level": "~11%",
+      "change_1d": "unch",
+      "note": "Subdued despite 161 handle; prior spike to >11% in earlier stress; complacency signal"
+    },
+    {
+      "marker": "US 10Y",
+      "level": "4.46%",
+      "change_1d": "+2 bps",
+      "note": "Fed held, hawkish dots; Warsh signaling possible hike later 2026"
+    },
+    {
+      "marker": "JGB 10Y",
+      "level": "2.63%",
+      "change_1d": "+1 bp",
+      "note": "Post-hike drift higher; Himino pledged continued tightening, but Asada dissent noted"
+    },
+    {
+      "marker": "US-JP 10Y spread",
+      "level": "183 bps",
+      "change_1d": "+1 bp",
+      "note": "Computed 446 - 263; carry still attractive, narrowing stalled"
+    },
+    {
+      "marker": "MOVE index",
+      "level": "67.3",
+      "change_1d": "-7.5%",
+      "note": "Rates vol calm, down from 115 peak in March; bond market complacent"
+    },
+    {
+      "marker": "VIX",
+      "level": "16.4",
+      "change_1d": "-11%",
+      "note": "Below LT avg, equity vol compressed despite Fed hawkish tilt"
+    },
+    {
+      "marker": "WTI crude",
+      "level": "$76.51",
+      "change_1d": "-0.1%",
+      "note": "Down 21% monthly on US-Iran deal; eases Japan import inflation pressure; \u00a5/bbl = 12,332"
+    },
+    {
+      "marker": "BTC",
+      "level": "$63,676",
+      "change_1d": "+1.6%",
+      "note": "Neutral, range 63-66k; crypto liquidity stable, no distress signal"
+    },
+    {
+      "marker": "Nikkei 225",
+      "level": "71,250",
+      "change_1d": "+0.28%",
+      "note": "Near 1989 highs; absorbed BOJ hike well, tech-heavy (57% weight), breadth risk if unwind hits"
+    },
+    {
+      "marker": "HY credit spread (OAS)",
+      "level": "278 bps",
+      "change_1d": "unch",
+      "note": "BofA HY index tight, no credit stress; complacency in sync with MOVE/VIX"
+    }
+  ],
+  "trigger_map": [
+    {
+      "trigger": "MOF FX intervention",
+      "status": "armed",
+      "note": "USDJPY 161.24, just 46 pips from 162; Kihara repeated 'prepared to respond' Jun 19; rate-checks rumored but no action yet"
+    },
+    {
+      "trigger": "BOJ rate hike surprise",
+      "status": "latent",
+      "note": "Just hiked Jun 16 to 1.0%; Himino pledged continued tightening but next meeting Jul 30-31 unlikely to move; Aug/Sep live"
+    },
+    {
+      "trigger": "JGB 10Y break above cycle high",
+      "status": "armed",
+      "note": "At 2.63%, drifting higher post-hike; prior cycle high ~2.75% if breached signals sharper BOJ tightening path"
+    },
+    {
+      "trigger": "USDJPY 1M risk reversal flip to JPY-call",
+      "status": "latent",
+      "note": "Vol subdued at 11%, no skew flip yet; would signal hedge demand if USDJPY breaks 162"
+    },
+    {
+      "trigger": "Energy / Hormuz shock",
+      "status": "latent",
+      "note": "US-Iran deal signed Jun 20 in Switzerland, Hormuz reopening; WTI down 21% monthly; risk dormant but reversal would reignite"
+    },
+    {
+      "trigger": "MOVE index spike >100",
+      "status": "latent",
+      "note": "At 67, well below 100; peaked 115 in March; Fed hawkish but rates vol compressed, no regime change yet"
+    }
+  ],
+  "narrative": {
+    "p1": "USDJPY closed 161.24 on Jun 19, up 0.10% daily and testing 161.69 intraweek\u2014just 46 pips shy of the 162 MOF watch line. BOJ hiked 25bp to 1.0% on Jun 16 (first since Dec 2025), but the yen reversed all gains within 48 hours as the Fed held hawkish and half the FOMC now expects a hike later this year. Deputy Governor Himino pledged continued tightening on Jun 19, yet dissent from Asada (production/employment drag) and Governor Ueda's hospitalization (liver cyst) add noise. MOF Chief Cabinet Secretary Kihara reiterated 'prepared to respond to excessive moves' verbatim. Oil collapsed 21% this month on the US-Iran preliminary peace deal (signed today Jun 20 in Switzerland), easing Japan's import-cost pressure. Nikkei hit 71,250, absorbing the hike well, but equity breadth is narrow (tech 57% of index). Stage unchanged at 2 (Pre-Intervention); regime remains yellow.",
+    "p2": "Computed anchors: US-JP 10Y spread 183 bps (446 - 263), down 1 bp but still wide enough to sustain carry. Carry-to-vol proxy 183/11 \u2248 16.6 (elevated, vol too low for this setup). \u00a5/bbl crude 12,332 (76.51 \u00d7 161.24), down sharply from peaks, reducing BOJ's inflation tail risk. USDJPY 5-day +1.1%, pace moderate but level high. Distance from 60d mean: stretched ~2% above. MOVE 67 and VIX 16.4 both calm, credit spreads tight at 278 bps\u2014cross-asset complacency despite USDJPY at watch line and Fed hawkish pivot. Applied unwind prior to 1w grade: would otherwise be D (vol calm, oil down, BOJ just moved), but USDJPY proximity to 162 and persistent MOF warnings justify C. Grades: C/C/D/C. Week 3 dips to D if US-Iran deal holds and import pressure stays subdued; week 4 back to C on BOJ Jul 30-31 meeting catalyst (unlikely to hike but market may re-test positioning). No FX risk reversals data available; flag noted.",
+    "p3": "BTC at $63,676, up 1.6% daily, range-bound 63-66k for two weeks\u2014neutral, no unwind signal. Crypto liquidity stable; BTC decoupled from oil's 21% monthly drop (prior correlation broken). XRP and open interest data unavailable. BTC-DXY 30d correlation not retrieved but DXY near 101, modest strength. Crypto showing resilience despite Fed hawkish tilt and USDJPY stress, suggesting risk-on rotation intact in digital assets even as FX carry setup fragile. For positioning: BTC neutral-to-constructive if USDJPY stabilizes below 162; sharp yen rally (intervention or surprise BOJ move) would likely trigger 5-10% BTC pullback as yen carry unwind hits leveraged positions. Watch BTC support at 62k; break below flags broader risk-off."
+  },
+  "horizon_rationale": {
+    "w1_w2": "Week 1 at C: USDJPY 161.24, MOF tolerance thin, but VIX/MOVE calm and oil down 21% buys time. Week 2 holds C: spread still 183 bps keeps carry bid, but if USDJPY tests 162 or oil reverses on deal failure, intervention or vol spike likely. No meaningful catalyst inside 2 weeks to force grade change unless pair breaks 162.",
+    "w2_w3": "Week 2 C \u2192 Week 3 D: if US-Iran deal sticks and Hormuz fully reopens, oil stays subdued, \u00a5/bbl pressure off, BOJ has breathing room. Jul 30-31 BOJ meeting unlikely to hike again so soon after Jun move. Unwind risk moderates in benign oil scenario. Grade drops to D (Unlikely) as carry stabilizes and MOF can tolerate 160-162 range if pace slows.",
+    "w3_w4": "Week 3 D \u2192 Week 4 C: BOJ Aug meeting (late July decision for Aug) or market positioning into Sep create scenario risk. If JGB 10Y breaks 2.75% or Himino/Ueda signal Sept hike, USDJPY may re-test highs and MOF patience. Scenario-weighted grade lifts back to C (Watchful) on catalyst uncertainty, not data certainty."
+  },
+  "watch_list": [
+    "USDJPY break above 162.00 (triggers MOF intervention high probability)",
+    "Oil reversal above $85 (US-Iran deal failure, Hormuz re-closure, reignites Japan inflation pressure)",
+    "BOJ Himino or Ueda speech signaling Sept hike appetite (would compress spread expectations, but also test yen)",
+    "MOVE index spike above 90 (rates vol regime change, Fed repricing, carry unwind amplifier)",
+    "JGB 10Y break above 2.75% (prior cycle high, confirms BOJ behind curve, accelerates tightening path)"
+  ],
+  "sources": [
+    {
+      "title": "Trading Economics - USD/JPY",
+      "url": "https://tradingeconomics.com/japan/currency"
+    },
+    {
+      "title": "Bank of Japan - Monetary Policy Decision Jun 16, 2026",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf"
+    },
+    {
+      "title": "Japan Times - BOJ Raises Rates to 1%",
+      "url": "https://www.japantimes.co.jp/business/2026/06/16/markets/boj-meeting-june-2026/"
+    },
+    {
+      "title": "Trading Economics - US 10Y Treasury",
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+    },
+    {
+      "title": "Trading Economics - JGB 10Y",
+      "url": "https://tradingeconomics.com/japan/government-bond-yield"
+    },
+    {
+      "title": "StreetStats - VIX & MOVE Volatility",
+      "url": "https://streetstats.finance/markets/volatility"
+    },
+    {
+      "title": "Trading Economics - WTI Crude Oil",
+      "url": "https://tradingeconomics.com/commodity/crude-oil"
+    },
+    {
+      "title": "CoinDesk - Bitcoin Price",
+      "url": "https://www.coindesk.com/price/bitcoin"
+    },
+    {
+      "title": "Trading Economics - Nikkei 225",
+      "url": "https://tradingeconomics.com/japan/stock-market"
+    },
+    {
+      "title": "FRED - BofA US High Yield OAS",
+      "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+    }
+  ]
+}
