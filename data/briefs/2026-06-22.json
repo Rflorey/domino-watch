@@ -1,0 +1,199 @@
+{
+  "date": "2026-06-22",
+  "generated_at": "2026-06-22T00:00:00-04:00",
+  "regime_flag": "yellow",
+  "regime_justification": "USDJPY at 161.54 (1986 lows) despite BOJ hiking to 1% last week; MOF verbal interventions failing, spread at 181 bps still wide, but vol compressed at ~7% and carry trade intact\u2014pre-intervention watch-line reached",
+  "domino_stage": {
+    "stage": 2,
+    "label": "Pre-Intervention",
+    "justification": "USDJPY at MOF watch line (161.5), Finance Minister Katayama issuing repeated verbal warnings, yen erasing all April intervention gains, vol bid but not spiking\u2014classic pre-intervention setup"
+  },
+  "grades": {
+    "1w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "MOF at pain threshold, BOJ hiked but yen ignored it; intervention risk elevated but not imminent absent sharp acceleration"
+    },
+    "2w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Carry trade grinding higher despite 25bp hike; Fed hawkish tilt widens policy gap; no catalyst inside window but fragility building"
+    },
+    "3w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Next BOJ meeting not until July; absent exogenous shock or USDJPY >162, regime remains stretched but stable"
+    },
+    "4w": {
+      "grade": "D",
+      "label": "Unlikely",
+      "driver": "If no intervention by then, market will have faded MOF credibility; alternatively, successful intervention resets to stage 0-1"
+    }
+  },
+  "bottom_line": "Stage 2 (Pre-Intervention): USDJPY at 161.5 near 1986 lows, MOF issuing daily warnings, yen surrendering all April intervention gains despite BOJ hiking to 1% last week. Carry trade unfazed by 25bp move\u2014181bp spread still wide, vol subdued at 7%, risk assets bid. Classic watch-line setup but trigger absent: pace moderate (+0.67% weekly), vol not spiking, no BOJ meeting until July. Grade C across 1-3w reflects elevated intervention risk and fragile positioning, but no imminent catalyst. Applied unwind prior as tiebreaker: data ambiguous (hike ignored vs. no panic), lean one notch more alert given MOF rhetoric and 1986-low psychology.",
+  "stack": [
+    {
+      "marker": "USD/JPY spot",
+      "level": "161.54",
+      "change_1d": "+0.17%",
+      "note": "At 1986 lows; erased all April intervention gains despite BOJ hike to 1%"
+    },
+    {
+      "marker": "USD/JPY 5d %",
+      "level": "+0.67%",
+      "change_1d": "\u2014",
+      "note": "Moderate pace; MOF historically reacts to pace not level\u2014no spike yet"
+    },
+    {
+      "marker": "USD/JPY 1M implied vol",
+      "level": "~7%",
+      "change_1d": "\u2014",
+      "note": "Subdued; down from April peak ~16%; complacency despite watch-line breach"
+    },
+    {
+      "marker": "US 10Y",
+      "level": "4.46%",
+      "change_1d": "-0.8bp",
+      "note": "Fed held last week but 9/19 officials signal hike by year-end; hawkish tilt"
+    },
+    {
+      "marker": "JGB 10Y",
+      "level": "2.64%",
+      "change_1d": "+1bp",
+      "note": "BOJ hiked 25bp to 1% Jun 16; dissent from Asada citing growth risk"
+    },
+    {
+      "marker": "US-JP 10Y spread",
+      "level": "182 bps",
+      "change_1d": "-1bp",
+      "note": "Wide; carry trade intact despite normalization; Dec hike priced ~67%"
+    },
+    {
+      "marker": "MOVE index",
+      "level": "65.39",
+      "change_1d": "-7.5%",
+      "note": "Rates vol compressed; well below 100 threshold\u2014no bond stress signal"
+    },
+    {
+      "marker": "VIX",
+      "level": "16.78",
+      "change_1d": "+2.3%",
+      "note": "Equity vol low; risk-on intact despite geopolitical noise (Hormuz de-escalation)"
+    },
+    {
+      "marker": "WTI crude",
+      "level": "$77.54",
+      "change_1d": "+0.3%",
+      "note": "Off spike highs; Hormuz reopening narrative but flow still uncertain"
+    },
+    {
+      "marker": "\u00a5/bbl crude",
+      "level": "\u00a512,522",
+      "change_1d": "+0.5%",
+      "note": "Import-cost pressure elevated; BOJ cited energy inflation in hike rationale"
+    },
+    {
+      "marker": "HY spread (OAS)",
+      "level": "~300 bps",
+      "change_1d": "\u2014",
+      "note": "Near 2007 tights; no credit stress\u2014risk appetite strong, contagion channel dormant"
+    },
+    {
+      "marker": "BTC spot",
+      "level": "$64,245",
+      "change_1d": "+0.3%",
+      "note": "Consolidating $61k-$65k; correlation to DXY elevated, liquidity sympathy neutral"
+    }
+  ],
+  "trigger_map": [
+    {
+      "trigger": "MOF FX intervention",
+      "status": "cocked",
+      "note": "USDJPY at 161.5 watch line; Katayama daily warnings; April intervention gains erased\u2014credibility test underway, catalyst is pace >1%/day or >162 breach"
+    },
+    {
+      "trigger": "BOJ rate hike surprise",
+      "status": "armed",
+      "note": "Hiked 25bp to 1% Jun 16 but market faded it; next meeting July, no interim signal\u2014surprise unlikely near-term but normalization path confirmed"
+    },
+    {
+      "trigger": "USDJPY 1M risk reversals flipping to JPY-call premium",
+      "status": "armed",
+      "note": "Vol subdued at 7% vs. April 16%; no skew flip yet\u2014market not pricing intervention despite watch-line breach"
+    },
+    {
+      "trigger": "JGB 10Y break above prior cycle high",
+      "status": "latent",
+      "note": "At 2.64%, well below prior highs; BOJ signaled continued hikes but pace gradual\u2014no breakout imminent"
+    },
+    {
+      "trigger": "MOVE index spike above 100",
+      "status": "latent",
+      "note": "At 65, rates vol compressed; no regime change in bond market\u2014carry mechanics still favorable"
+    },
+    {
+      "trigger": "HY credit spread widening >50bps in a week",
+      "status": "latent",
+      "note": "OAS ~300bp, near cycle tights; no contagion signal, risk appetite strong\u2014credit channel dormant"
+    }
+  ],
+  "narrative": {
+    "p1": "USDJPY touched 161.93 intraday, the highest since 1986, before settling at 161.54\u2014erasing all gains from the April 30 intervention despite the BOJ hiking 25bp to 1% last week. Finance Minister Katayama issued repeated verbal warnings about 'excessive moves' and readiness to act, but the market called the bluff: yen weakened +0.67% over 5 days, a moderate grind rather than a spike. Overnight saw US-Iran Hormuz de-escalation narrative support risk-on (VIX +2.3% but still 16.78), oil consolidating at $77, and Treasuries flat (10Y 4.46%). BOJ Deputy Governor Himino reiterated Friday that real rates remain 'extremely low' and further hikes are coming, but the market is pricing only ~67% odds of another move by December. Stage remains 2 (Pre-Intervention): watch-line breached, verbal intervention active, but no kinetic action yet and pace not spiking. No grade change from yesterday's C.",
+    "p2": "Quant anchors show a fragile but not breaking setup. US-JP spread at 182bp is 32bp wider than Jan low (150bp)\u2014wide enough to sustain carry but narrowing post-hike. Carry-to-vol proxy (spread/vol) at ~26 is elevated, signaling complacency: vol at 7% is well below April's 16% despite being at the same USDJPY level MOF intervened at in April. Distance from 60d mean: USDJPY now ~2% above 158.76 SMA\u2014stretched but not extreme. USDJPY pace at +0.67% weekly is below MOF's historical intervention threshold (~1%+ daily moves). The tell: BOJ hiked, JGBs sold off 1bp, yen ignored it entirely. That's a policy-impotence signal, not a carry-unwind signal. We're in Domino Stage 2 because the setup is primed\u2014MOF at watch line, verbal warnings daily, intervention gains erased\u2014but the trigger is missing: no pace spike, no vol explosion, no risk-off cascade. 1-2w grades stay C (Watchful) because intervention risk is elevated and one headline can flip this, but data is not screaming imminent. **Applied unwind prior**: data is genuinely ambiguous (hike ignored = unwind setup, but vol/credit/equities = risk-on intact). Lean C rather than D as tiebreaker given MOF rhetoric intensity and 1986-low psychology creating fragile positioning. Without the prior, would grade D (Unlikely) for 1w.",
+    "p3": "BTC at $64,245, up +0.3% on the session, consolidating the $61k-$65k range established post-Fed. Open interest direction unavailable but price action suggests neither breakout nor breakdown imminent\u2014liquidity sympathy to risk-on is neutral. BTC-DXY correlation elevated (DXY holding 100.85 despite oil pullback), meaning BTC is trading as a dollar-positive asset, not a safe-haven. For crypto positioning: if yen carry unwinds (Stage 3+), expect BTC to drain alongside equities as levered long positions unwind and USD liquidity tightens. Current read: no stress, but no breakout fuel either. If USDJPY intervention occurs and succeeds (yen rallies 3-5%), expect short-term BTC weakness as dollar-longs get hit. If intervention fails (yen fades gains within 48h like in April/May), BTC likely consolidates or grinds higher with continued risk-on. Key watch: $60k support\u2014break below signals liquidity stress; hold above keeps neutral bias."
+  },
+  "horizon_rationale": {
+    "w1_w2": "1w vs 2w both C: near-term intervention risk elevated (MOF at watch line, daily warnings, 1986-low psychology) but no catalyst inside 7 days absent sharp USDJPY acceleration or exogenous shock. 2w extends same risk as no BOJ meeting until July and Fed hiked expectations (9/19 officials) widen policy gap further, keeping carry intact unless MOF acts. Difference: 2w allows more time for pace to accelerate or geopolitical shock (Hormuz reversal, US-Iran talks collapse) to trigger Stage 3.",
+    "w2_w3": "2w C vs 3w C: both Watchful but 3w scenario-weights intervention probability lower as time passes without action. If MOF hasn't acted by 2w mark despite USDJPY >161, market will interpret as reluctance (April/May pattern: intervene, fade, repeat verbal only). 3w sits inside 'waiting for next BOJ meeting' zone (July)\u2014unless USDJPY >162 or pace >1%/day forces MOF hand, status quo grinds higher. Risk: 3w also captures any July BOJ pre-meeting leak or Ueda speech that could shift expectations.",
+    "w3_w4": "3w C vs 4w D: by 4w (late July), either intervention occurred and reset to Stage 0-1, or MOF credibility is spent and market has faded verbal warnings entirely. Grade D (Unlikely) reflects scenario where no intervention = market calls bluff, carry grinds higher, Stage 2 reverts to Stage 1 (Pressure Building but not Pre-Intervention). Alternatively, if intervention succeeds by week 3, 4w grade would be F (unwind averted). Non-monotonic drop reflects binary outcomes resolving by late July: intervention success/failure or BOJ July meeting shifts trajectory."
+  },
+  "watch_list": [
+    "USDJPY daily pace: >1% move in a session historically triggers MOF action\u2014watch for headline-driven spike (Hormuz, Fed official hawkish comment, BOJ dissent leak)",
+    "MOF rate-check rumors: Japanese press (Nikkei, Jiji) reporting MOF checking FX levels with banks is 24-48h leading indicator of intervention",
+    "USDJPY 1M risk reversal skew: currently flat at ~7% vol; flip to JPY-call premium would signal options market pricing intervention",
+    "BOJ Himino/Ueda speeches: any signal of accelerated normalization or explicit FX concern would shift market pricing of July meeting",
+    "WTI crude: bounce back above $80 would re-escalate import-cost pressure, giving BOJ/MOF dual mandate (inflation + FX) to act"
+  ],
+  "sources": [
+    {
+      "title": "Trading Economics - Japan Currency",
+      "url": "https://tradingeconomics.com/japan/currency"
+    },
+    {
+      "title": "Trading Economics - US 10Y Treasury",
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+    },
+    {
+      "title": "Trading Economics - Japan 10Y JGB",
+      "url": "https://tradingeconomics.com/japan/government-bond-yield"
+    },
+    {
+      "title": "TradingView - MOVE Index",
+      "url": "https://www.tradingview.com/symbols/TVC-MOVE/"
+    },
+    {
+      "title": "Yahoo Finance - VIX",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/"
+    },
+    {
+      "title": "Trading Economics - Crude Oil",
+      "url": "https://tradingeconomics.com/commodity/crude-oil"
+    },
+    {
+      "title": "CoinGecko - Bitcoin Price",
+      "url": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+      "title": "Bank of Japan - Monetary Policy June 16 2026",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf"
+    },
+    {
+      "title": "Trading Economics - Japan Interest Rate",
+      "url": "https://tradingeconomics.com/japan/interest-rate"
+    },
+    {
+      "title": "FRED - ICE BofA US High Yield OAS",
+      "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+    }
+  ]
+}
