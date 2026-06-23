@@ -1,0 +1,176 @@
+{
+  "date": "2026-06-23",
+  "generated_at": "2026-06-23T12:00:00-05:00",
+  "regime_flag": "yellow",
+  "regime_justification": "USDJPY at 161.70, near the April intervention line (160) with BOJ having hiked to 1% on June 16, yet carry spread remains wide at 187 bps; vol subdued but mixed signals across JGB yields (2.63%) at multi-decade highs and crude oil falling sharply; intervention risk elevated but no imminent trigger today.",
+  "domino_stage": {
+    "stage": 1,
+    "label": "Pressure Building",
+    "justification": "USDJPY 161.70, BOJ hiked to 1.0% on June 16 but spread still 187 bps, JGB 10Y at 2.63% (highest since 1995), Deputy Gov Himino reaffirmed tightening bias June 19, MOF intervention in April/May, oil collapsing post-Iran deal but import-cost pressure still present; carry mechanics intact yet policy tightening underway."
+  },
+  "grades": {
+    "1w": {
+      "grade": "D",
+      "label": "Unlikely",
+      "driver": "BOJ just hiked; USDJPY consolidating post-hike; VIX 17.28, MOVE 70, oil down 21% in month; no imminent catalyst"
+    },
+    "2w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "Next BOJ MPM July 30\u201331; spread 187 bps still wide; JGB yields 2.63%, intervention risk remains if USDJPY tests 162-163; applied unwind prior; would otherwise grade D"
+    },
+    "3w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "BOJ meeting July 30-31 inside window; Himino signaled continued hikes if inflation exceeds 2%; Fed hawkish (Warsh tightening tone June 17); scenario-weighted for policy surprise"
+    },
+    "4w": {
+      "grade": "D",
+      "label": "Unlikely",
+      "driver": "Post-BOJ clarity likely reduces near-term tail risk; if no surprise hike, market reprices carry as durable into August; geopolitical de-escalation supportive"
+    }
+  },
+  "bottom_line": "Carry trade still structurally intact (187 bps spread) despite BOJ's June hike to 1.0%; USDJPY at 161.70 is near intervention watch-line but consolidating; JGB yields at 2.63% and Deputy Gov Himino's June 19 commitment to further hikes mean slow-motion normalization continues. Oil down 21% in month removes near-term imported inflation pressure. Next BOJ meeting July 30\u201331 is the key catalyst. Grade 2-3 weeks at C (watchful) for potential hawkish surprise or USDJPY push above 162; otherwise regime remains yellow with pressure building but no imminent unwind. BTC at ~$63k reflects risk-off tilt but not panic.",
+  "stack": [
+    {
+      "marker": "USD/JPY spot",
+      "level": 161.7,
+      "change_1d": "+0.06%",
+      "note": "Consolidating 18 pips below 162; 5d flat; post-BOJ hike June 16; April intervention line was 160"
+    },
+    {
+      "marker": "US-JP 10Y spread",
+      "level": "187 bps",
+      "change_1d": "+7 bps",
+      "note": "US 10Y 4.50%, JGB 10Y 2.63%; spread widened as US yields rose on hawkish Fed (Warsh); carry incentive intact"
+    },
+    {
+      "marker": "JGB 10Y yield",
+      "level": "2.63%",
+      "change_1d": "-3 bps",
+      "note": "Highest since Sept 1995; BOJ hiked to 1.0% on June 16, signal for more hikes (Himino June 19)"
+    },
+    {
+      "marker": "US 10Y yield",
+      "level": "4.50%",
+      "change_1d": "+6 bps",
+      "note": "Climbed as markets price 50% chance of Sep hike; Fed hawkish tone last week (Warsh, PCE Thurs)"
+    },
+    {
+      "marker": "VIX",
+      "level": 17.28,
+      "change_1d": "+3.0%",
+      "note": "Modest uptick; tech selloff Monday; still below 20, equities mixed"
+    },
+    {
+      "marker": "MOVE index",
+      "level": 70.0,
+      "change_1d": "+7.1%",
+      "note": "Spiked from 65 prev close; rates vol rising but well below 100 stress threshold"
+    },
+    {
+      "marker": "WTI crude",
+      "level": "$73.90",
+      "change_1d": "-2.3%",
+      "note": "Down 21% in month; US-Iran 60-day deal, Hormuz reopening; \u00a5/bbl = ~11,940 (down from peak)"
+    },
+    {
+      "marker": "BTC spot",
+      "level": "$63,010",
+      "change_1d": "-1.9%",
+      "note": "Crypto down with tech; holding above $62k; down ~3.4% in 7d; risk-off but no panic"
+    },
+    {
+      "marker": "Nikkei 225",
+      "level": "69,788",
+      "change_1d": "-3.6%",
+      "note": "Pullback from record high 72,831 on June 22; profit-taking after AI rally; mirrors US tech weakness"
+    }
+  ],
+  "trigger_map": [
+    {
+      "trigger": "MOF FX intervention",
+      "status": "armed",
+      "note": "USDJPY 161.70, 18 pips below 162; MOF intervened twice in April-May around 160; Kanda/MOF rhetoric quiet; watch for rate-check rumors if 162-163 tested"
+    },
+    {
+      "trigger": "BOJ rate hike surprise",
+      "status": "armed",
+      "note": "Just hiked June 16 to 1.0%; Himino June 19 reaffirmed tightening bias; next MPM July 30-31; another 25bp hike possible if inflation data hot"
+    },
+    {
+      "trigger": "JGB 10Y break above prior cycle high",
+      "status": "armed",
+      "note": "JGB 10Y at 2.63%, highest since Sept 1995; rising steadily post-hike; 2.7% would be new multi-decade high, bond volatility rising"
+    },
+    {
+      "trigger": "MOVE index spike above 100",
+      "status": "latent",
+      "note": "MOVE at 70, up from 65 but still well below 100 stress threshold; rates vol elevated but contained"
+    },
+    {
+      "trigger": "Energy / Hormuz shock pushing \u00a5/bbl > prior peak",
+      "status": "latent",
+      "note": "Oil down 21% in month; US-Iran 60-day deal, Hormuz reopening; \u00a5/bbl ~11,940, well below prior peak; tail risk receding"
+    }
+  ],
+  "narrative": {
+    "p1": "Quiet consolidation after last week's BOJ hike. USDJPY at 161.70, up 6 bps on the day, holding just below 162 after the June 16 BOJ hike to 1.0%. Nikkei fell 3.6% from record highs on profit-taking and US tech weakness. Oil continued its collapse (down 2.3% today, -21% in month) on US-Iran 60-day roadmap and Hormuz reopening, removing near-term imported inflation pressure. US 10Y yield climbed 6 bps to 4.50% as markets digest hawkish Fed tone (Warsh) and anticipate Thursday PCE print; JGB 10Y at 2.63% (down 3 bps). No regime change from yesterday's yellow flag; carry spread remains 187 bps despite BOJ tightening. Deputy Governor Himino reaffirmed June 19 the BOJ will continue raising rates if inflation exceeds 2%, keeping July 30\u201331 MPM on watch.",
+    "p2": "Carry mechanics: 187 bps spread (4.50% US vs 2.63% JGB) still incentivizes the trade despite BOJ hiking. USDJPY 1M implied vol unavailable but subdued given orderly price action. USDJPY 5-day change flat; distance from 60d mean is neutral/slightly stretched. Pace is not alarming\u2014MOF historically reacts to rapid moves, not slow grinds. JGB yields at multi-decade highs signal normalization underway but not panic; MOVE at 70 (up from 65) shows rates vol rising but contained. Domino stage 1 (Pressure Building): BOJ rhetoric shifting (Himino June 19), JGB yields drifting up, spread still wide, USDJPY pace measured. Not yet at stage 2 (Pre-Intervention) because no rate-check rumors and USDJPY not at watch-line urgency. Grade 1w at D (unlikely): no imminent catalyst, just hiked, oil down. Grade 2w at C (watchful): applied unwind prior; would otherwise grade D. Next BOJ meeting July 30\u201331 sits inside 2-3 week window, and Himino signaled continued hikes; if USDJPY tests 162-163 or JGB yields spike further, intervention/hike risk elevates. Data is mixed (carry intact, vol low) but not clearly benign given JGB at 2.63% and BOJ tightening bias\u2014tiebreaker pushes 2w to C.",
+    "p3": "BTC at $63,010 (down 1.9% today, -3.4% in 7d) reflects the broader tech selloff and risk-off tilt but not systemic stress. Holding above $62k support; no waterfall. Crypto is tracking equity vol more than FX carry right now\u2014Nikkei down 3.6%, US tech weak. XRP data unavailable. BTC open interest direction and DXY correlation not retrieved but BTC's decline is modest, suggesting crypto liquidity hasn't drained despite hawkish Fed and BOJ normalization. For positioning: BTC is a coincident indicator of risk appetite, not leading. If USDJPY breaks higher or BOJ surprises hawkish at July MPM, expect crypto to underperform further as liquidity tightens. Current setup: watch BTC $62k support and correlation with Nikkei; if both hold, crypto positioning can remain neutral. If BTC breaks $60k, risk-off intensifies."
+  },
+  "horizon_rationale": {
+    "w1_w2": "Week 1 graded D (unlikely) because BOJ just hiked June 16, USDJPY consolidating, oil down, no catalyst. Week 2 graded C (watchful) because next BOJ MPM July 30\u201331 is inside the 2-week forward window, Himino June 19 signaled more hikes if inflation hot, and USDJPY near 162 could draw MOF scrutiny. Applied unwind prior as tiebreaker; data mixed (carry wide but JGB yields high, vol low but normalization underway). Without prior, would grade D.",
+    "w2_w3": "Week 2 and 3 both graded C (watchful). BOJ meeting July 30\u201331 is the key event inside this window. If BOJ hikes another 25 bps or signals accelerated normalization, USDJPY could spike or compress depending on market positioning. Himino's June 19 comments ('continue to raise rates') and JGB yields at 2.63% mean another hike is plausible. Fed also hawkish (markets pricing 50% Sep hike). Scenario-weighted: 60% chance BOJ holds, 40% chance hike/hawkish signal. If hike, unwind risk rises to B; if hold, drops to D. Grade C reflects this uncertainty.",
+    "w3_w4": "Week 3 graded C, week 4 graded D (unlikely). By week 4, BOJ July MPM will have concluded and delivered clarity. If no surprise hike, market reprices carry as durable into August, unwinding pressure eases. If BOJ does hike, the immediate volatility spike will have occurred in week 3, and week 4 represents stabilization post-event. Geopolitical de-escalation (US-Iran deal) also supports lower tail risk by week 4. Grade D reflects post-catalyst normalization."
+  },
+  "watch_list": [
+    "BOJ MPM July 30-31: Himino signaled more hikes; watch for 25bp hike or hawkish forward guidance",
+    "USDJPY 162-163 test: Would trigger MOF rate-check rumors and intervention risk",
+    "US PCE data Thursday June 26: Fed's preferred inflation gauge; hawkish print could push US 10Y higher, widening spread further",
+    "JGB 10Y above 2.70%: Would mark new multi-decade high, potential bond volatility cascade",
+    "BTC break below $60k: Signal of broader crypto liquidity drain and risk-off intensification"
+  ],
+  "sources": [
+    {
+      "title": "Investing.com USD/JPY",
+      "url": "https://www.investing.com/currencies/usd-jpy"
+    },
+    {
+      "title": "CNBC US 10Y Treasury",
+      "url": "https://www.cnbc.com/quotes/US10Y"
+    },
+    {
+      "title": "Trading Economics Japan 10Y Bond",
+      "url": "https://tradingeconomics.com/japan/government-bond-yield"
+    },
+    {
+      "title": "Yahoo Finance VIX",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/"
+    },
+    {
+      "title": "Yahoo Finance MOVE Index",
+      "url": "https://finance.yahoo.com/quote/%5EMOVE/"
+    },
+    {
+      "title": "Investing.com WTI Crude",
+      "url": "https://www.investing.com/commodities/crude-oil"
+    },
+    {
+      "title": "CoinMarketCap Bitcoin",
+      "url": "https://coinmarketcap.com/currencies/bitcoin/"
+    },
+    {
+      "title": "Bank of Japan official site",
+      "url": "https://www.boj.or.jp/en/"
+    },
+    {
+      "title": "Trading Economics Japan Interest Rate",
+      "url": "https://tradingeconomics.com/japan/interest-rate"
+    },
+    {
+      "title": "Investing.com Nikkei 225",
+      "url": "https://www.investing.com/indices/japan-ni225"
+    }
+  ]
+}
