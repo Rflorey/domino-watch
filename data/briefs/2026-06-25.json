@@ -1,0 +1,190 @@
+{
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T09:00:00-05:00",
+  "regime_flag": "yellow",
+  "regime_justification": "USDJPY at 161.72 (+0.15% 24h), holding above 160 watch line but with elevated vol; BOJ hawkish board member Tamura calling for rate hikes every few months; spread at 177 bps compressed from recent levels; oil falling sharply (-4% to $69/bbl) easing imported inflation pressure but yen not rallying decisively; intervention risk elevated but no action yet.",
+  "domino_stage": {
+    "stage": 1,
+    "label": "Pressure Building",
+    "justification": "BOJ rhetoric shifting hawkish (Tamura speech today), JGB 10Y at 2.67% post-hike, USDJPY pace moderate but pair above 160 MOF watch line, oil collapsing easing \u00a5/bbl pressure but carry still wide at 177 bps\u2014setup fragile but not yet at pre-intervention threshold."
+  },
+  "grades": {
+    "1w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "USDJPY holding 161-162 range above MOF line; BOJ Tamura hawkish but July meeting unlikely; oil crash (-26% month) easing import pressure; spread 177 bps still attractive but vol rising (7.9% implied); risk-off ripple from tech selloff."
+    },
+    "2w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "BOJ Summary of Opinions showed broad support for more hikes; next meeting not until late July; US PCE data this week could widen/compress spread; Tamura's 'few months' cadence suggests no July action but market pricing hawk; applied unwind prior; would otherwise grade D."
+    },
+    "3w": {
+      "grade": "C",
+      "label": "Watchful",
+      "driver": "BOJ meeting July 30-31 inside window; if USDJPY grinds higher or oil reverses, MOF intervention risk climbs; spread still wide but carry-to-vol eroding; Fed Warsh hawkish tone keeping US yields elevated; scenario-weighted for catalyst risk."
+    },
+    "4w": {
+      "grade": "D",
+      "label": "Unlikely",
+      "driver": "Oil peace dividend likely persists (Hormuz reopening); BOJ unlikely to hike twice in quick succession; MOF intervention exhausts political capital; spread compression path slow; crypto draining suggests risk-off already priced; scenario-weighted for mean reversion."
+    }
+  },
+  "bottom_line": "Stage 1 Pressure Building: BOJ board member Tamura today called for rate hikes 'every few months' toward 2% neutral, the most explicit hawk signal since June 16 hike to 1.0%. USDJPY at 161.72, above MOF's 160 watch line but not accelerating. Spread 177 bps (US 4.40%, JGB 2.67%) still wide but compressed ~15 bps in two weeks. Oil crashed to $69 (-26% month) on Hormuz reopening, slashing Japan's \u00a5/bbl import burden and removing near-term inflation catalyst\u2014paradoxically reducing urgency for both BOJ hikes and MOF intervention. VIX 18.2, MOVE 68.8, both calm; BTC dumped to $60.2k (-4.5% today) and XRP $1.07 (-3%), tracking Nasdaq's tech rout. Grades C/C/C/D reflect fragile equilibrium: no imminent trigger but setup for intervention or surprise hike inside 2-3 weeks if USDJPY breaks higher or rhetoric escalates. July 30-31 BOJ meeting is the next focal point. Watch Tamura follow-through, US PCE Friday, and whether oil stays subdued.",
+  "stack": [
+    {
+      "marker": "USD/JPY spot",
+      "level": 161.72,
+      "change_1d": "+0.15%",
+      "note": "Above 160 MOF line; 18 pips from round; range-bound 161-162 for 3 days"
+    },
+    {
+      "marker": "US-JP 10Y spread",
+      "level": "177 bps",
+      "change_1d": "-9 bps",
+      "note": "4.40% - 2.67%; compressed from ~186 bps two weeks ago; still wide but eroding"
+    },
+    {
+      "marker": "USDJPY 1M implied vol",
+      "level": "7.9%",
+      "change_1d": "unch",
+      "note": "Up from ~7.6% last week; carry-to-vol = 177/7.9 = 22.4, down from >24"
+    },
+    {
+      "marker": "JGB 10Y yield",
+      "level": "2.67%",
+      "change_1d": "unch",
+      "note": "Post-June hike level; policymakers signal more hikes if econ/prices on track"
+    },
+    {
+      "marker": "US 10Y yield",
+      "level": "4.40%",
+      "change_1d": "-9 bps",
+      "note": "Fell on oil collapse & flight-to-safety; Fed Warsh hawkish but oil dove eases inflation"
+    },
+    {
+      "marker": "WTI crude",
+      "level": "$69.13",
+      "change_1d": "-1.7%",
+      "note": "Down 26% in month; Hormuz reopening & US-Iran peace progress; \u00a5/bbl = 11,178 yen, off peak"
+    },
+    {
+      "marker": "VIX",
+      "level": 18.24,
+      "change_1d": "-6.4%",
+      "note": "Elevated from low-teens but off intraday spike; tech selloff fading"
+    },
+    {
+      "marker": "MOVE index",
+      "level": 68.78,
+      "change_1d": "-1.8%",
+      "note": "Below 70; rates vol subdued despite Fed/BOJ divergence; <80 = calm"
+    },
+    {
+      "marker": "BTC spot",
+      "level": "$60,204",
+      "change_1d": "-4.5%",
+      "note": "Below $61k; tracking Nasdaq tech rout; ETF outflows ~$3B in Q2; miners under pressure"
+    },
+    {
+      "marker": "Nikkei 225",
+      "level": 69175,
+      "change_1d": "-0.9%",
+      "note": "Off record high 72,831; tech drag & BOJ hike digestion; financials weak on rate fears"
+    }
+  ],
+  "trigger_map": [
+    {
+      "trigger": "MOF FX intervention",
+      "status": "armed",
+      "note": "USDJPY above 160 line but pace slow (+0.15% day, +0.5% week); Katayama/Bessent signaling but no rate-checks reported; oil crash reduces urgency."
+    },
+    {
+      "trigger": "BOJ rate hike surprise",
+      "status": "armed",
+      "note": "Tamura today: hikes 'every few months' toward 2% neutral. July 30-31 meeting next; market sees <20% chance of July move but risk rising if rhetoric broadens."
+    },
+    {
+      "trigger": "JGB 10Y break above cycle high",
+      "status": "latent",
+      "note": "2.67% well below Apr 2026 high of ~2.71%; BOJ Summary shows comfort with gradual hikes; bond market orderly."
+    },
+    {
+      "trigger": "MOVE index spike above 100",
+      "status": "latent",
+      "note": "MOVE at 68.8, calm; Fed/BOJ divergence not yet destabilizing rates vol; watch for US PCE Friday."
+    },
+    {
+      "trigger": "USDJPY 1M risk reversals flipping JPY-call",
+      "status": "armed",
+      "note": "Data unavailable but 1M vol rising (7.9%); anecdotal reports of modest JPY-call bid post-Tamura speech; not yet decisive flip."
+    }
+  ],
+  "narrative": {
+    "p1": "Overnight: USDJPY opened 161.53, drifted to 161.72 (+0.15%) on modest dollar strength; Nikkei -0.9% tracking Nasdaq tech rout. Breaking: BOJ board member Naoki Tamura delivered the most hawkish speech since the June 16 hike, stating the BOJ should raise rates 'by a quarter percentage point at intervals of a few months toward the neutral rate of 2%' and that risks are tilted to upside inflation. This is the first explicit cadence guidance from a board member and markets took notice\u2014JGBs steady, yen barely moved, but option desks reported modest JPY-call inquiry. Oil collapsed another -1.7% to $69.13 (down 26% in the month) as Hormuz tanker traffic normalized and US-Iran peace framework held. US 10Y fell 9 bps to 4.40% on the oil move and flight-to-quality from tech selloff. Stage unchanged at 1 (Pressure Building) but Tamura's remarks elevate the probability of a July 30-31 hike from 'unlikely' to 'possible,' keeping 2-3 week grades at C. BTC dumped -4.5% to $60.2k, tracking Nasdaq -2.2%; ETF outflows continue.",
+    "p2": "Quant anchors: US-JP spread 177 bps (4.40 - 2.67), compressed from ~186 bps two weeks ago as JGBs rallied post-hike and Treasuries sold off on Fed Warsh hawkish pivot. USDJPY 1M implied vol 7.9%, up from 7.6% last week; carry-to-vol proxy now 22.4 (177/7.9), down from >24 in early June\u2014still positive but eroding. USDJPY 5-day change +0.5%, below MOF's historical intervention threshold of ~2%/week. Distance from 60d mean: pair compressed toward mean after early-month spike; currently neutral, not stretched. \u00a5/bbl crude = 161.72 \u00d7 69.13 = \u00a511,178, down sharply from May peak of ~\u00a518,800; Japan's import-cost pressure collapsing. Domino Stage 1: BOJ rhetoric shifting (Tamura explicit today, Summary of Opinions last week showed broad support for more hikes), JGB 10Y at post-hike 2.67%, USDJPY above 160 but not accelerating. Not yet Stage 2 (Pre-Intervention) because no rate-checks, no sharp vol spike, pace moderate. 1-week grade C: pair holding above MOF line, Tamura hawkish but July meeting 5 weeks out, oil crash easing pressure but spread still wide. 2-week grade C: Applied unwind prior; would otherwise grade D. Data is mixed\u2014oil dove removes inflation catalyst, but BOJ Summary + Tamura suggest normalization path intact. Catalyst risk: US PCE Friday could widen spread if hot, or compress if soft. Without the prior, setup is containable; with it, fragility warrants watchful stance.",
+    "p3": "Crypto liquidity read: BTC -4.5% to $60.2k, XRP -3% to $1.07; both tracking broader risk-off from Nasdaq's -2.2% tech rout (AI skepticism, Micron weak). BTC broke below 200-week MA (~$62k), historically a significant support; next stop $58k if selling persists. Open interest flat, funding rates neutral\u2014no leverage flush yet, just spot selling. XRP underperforming BTC despite CLARITY Act progress, likely due to profit-taking after May ETF inflows and weak short-term technicals (RSI 27, oversold). BTC-DXY 30d correlation near zero (DXY +0.2% today, BTC -4.5%), suggesting crypto decoupled from dollar and instead tracking equity risk appetite. For positioning: crypto draining $5B+ in market cap today signals risk-off already priced in broader markets. If yen carry unwinds (Stage 3+), expect BTC to test $55-58k as levered carry traders (who use crypto as collateral) liquidate. Current setup: crypto is a lagging indicator of risk appetite, not leading. No marginal signal for yen trade, but confirms broader fragility. XRP's underperformance vs BTC (down 9% in 7 days vs BTC -10%) suggests altcoin rotation stalled; if BTC stabilizes, XRP likely consolidates $1.05-1.15 range through month-end."
+  },
+  "horizon_rationale": {
+    "w1_w2": "Week 1 grade C: USDJPY above 160 but pace slow, Tamura hawkish but July meeting far, oil crash removes near-term inflation catalyst; MOF intervention risk elevated but no action likely unless pair spikes. Week 2 grade C (applied prior; else D): BOJ Summary + Tamura rhetoric suggest normalization path intact despite oil dove; US PCE Friday (Jun 27) could shift spread\u2014hot print widens to 185+ bps (bullish USD/JPY), soft compresses to <175 (bearish). Applied unwind prior as tiebreaker because data is genuinely mixed: oil collapse argues for lower grades, but BOJ hawkish shift and pair above 160 argue for caution. Without prior, would grade D (contained, no near-term trigger).",
+    "w2_w3": "Week 2-3 transition: scenario-weighted for BOJ July 30-31 meeting and potential MOF intervention if USDJPY grinds higher. If pair stays 161-163 and oil stays low, July hike unlikely (board will wait for data); grade compresses to D by week 3. If pair breaks 163-165 or oil reverses, MOF rate-checks begin and July hike odds rise to 30-40%; grade stays C or elevates to B. Key variable: whether Tamura's 'few months' cadence (implying Sep hike) gets echoed by other board members this week. Watching: Himino speech June 26, MPM minutes release, US jobless claims and PCE. Grade C for week 3 reflects ~35% chance of catalyst (intervention or surprise hike) inside the window, weighted by probability and impact.",
+    "w3_w4": "Week 3-4 shift to D: scenario-weighted for mean reversion. By late July, if no intervention or hike has occurred, market reprices tail risk lower. Oil peace dividend likely persists (Hormuz shipping normalized, US-Iran framework holding); BOJ unlikely to hike twice in 8 weeks (last hike Jun 16); MOF intervention politically costly and reserves finite (~32 operations left per IMF rules). Spread compression resumes as markets price in Fed cuts (Warsh hawkish but data-dependent) and BOJ gradualism. Crypto likely stabilizes or bounces if equity vol fades. Grade D reflects <25% unwind probability by end-July, acknowledging that complacency could rebuild if status quo holds. Not F (all-clear) because fundamentals (wide spread, BOJ normalization path, USDJPY above 160) remain unwind-prone on medium-term horizon."
+  },
+  "watch_list": [
+    "BOJ Deputy Governor Himino speech June 26\u2014will he echo Tamura's 'few months' hike cadence or push back?",
+    "US PCE inflation data June 27 (Friday)\u2014hot print (>0.3% MoM core) widens spread and pressures yen; soft print (<0.2%) compresses spread and could push USDJPY below 160.",
+    "USDJPY daily closes\u2014break above 163 triggers MOF rate-check rumors; break below 160 flips regime to green and grades decompress to D/D/F/F.",
+    "Oil price action\u2014reversal above $75 reignites Japan import-cost pressure and revives BOJ hike urgency; sustained sub-$70 keeps grades at D by week 4.",
+    "BOJ board member speeches and MPM minutes (released June 19)\u2014watch for Tamura rhetoric spreading to Noguchi, Nakagawa, or Ueda; consensus shift would elevate July hike odds to 40%+ and push grades to B."
+  ],
+  "sources": [
+    {
+      "title": "TradingView - USDJPY spot price",
+      "url": "https://www.tradingview.com/symbols/USDJPY/"
+    },
+    {
+      "title": "MacroMicro - USDJPY Implied Volatility Index",
+      "url": "https://en.macromicro.me/series/32377/jpy-vix"
+    },
+    {
+      "title": "CNBC - US 10Y Treasury Yield",
+      "url": "https://www.cnbc.com/quotes/US10Y"
+    },
+    {
+      "title": "TradingEconomics - Japan 10Y JGB Yield",
+      "url": "https://tradingeconomics.com/japan/government-bond-yield"
+    },
+    {
+      "title": "Yahoo Finance - VIX Index",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/"
+    },
+    {
+      "title": "Yahoo Finance - MOVE Index",
+      "url": "https://finance.yahoo.com/quote/%5EMOVE/"
+    },
+    {
+      "title": "TradingEconomics - WTI Crude Oil Price",
+      "url": "https://tradingeconomics.com/commodity/crude-oil"
+    },
+    {
+      "title": "CoinGecko - Bitcoin Price",
+      "url": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+      "title": "Bybit - XRP Price",
+      "url": "https://www.bybit.com/en/price/ripple/"
+    },
+    {
+      "title": "Japan Times - BOJ Tamura speech on rate hikes",
+      "url": "https://www.japantimes.co.jp/business/2026/06/25/economy/boj-hawkish-board-member-more-rate-hikes/"
+    },
+    {
+      "title": "BOJ - Summary of Opinions June 15-16 meeting",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "title": "TradingEconomics - Nikkei 225 Index",
+      "url": "https://tradingeconomics.com/japan/stock-market"
+    }
+  ]
+}
